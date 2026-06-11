@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="fr">
-  <head><script>window.__APP_EXPORTED__=true;</script><script>(function(){try{
+  <head><script>window.__APP_EXPORTED__=true;</script><script>window.__EMBEDDED_CLOUD__={"enabled":true,"provider":"googleSheets","googleSheets":{"webAppUrl":"https://script.google.com/macros/s/AKfycbzLu7zlEThs6hKXSd3OViYqAKqg-Ei7MV1l27QurWHm1Fnu7pjuW_v6yTURSdkPCthp/exec","secret":"","spreadsheetId":"17Qcgmi3otWH8j1Sv-NPb6NTdQLxx9NcsnYo8faniQbE","sheetName":"Operations","noCors":true},"embedInExport":true,"autoEnable":true,"saveDataWithGoogle":true,"lastSyncAt":1781186602916,"autoSyncSeconds":60,"googleDrive":{"webAppUrl":"https://script.google.com/macros/s/AKfycbzLu7zlEThs6hKXSd3OViYqAKqg-Ei7MV1l27QurWHm1Fnu7pjuW_v6yTURSdkPCthp/exec","secret":"","folderId":"14wjJ4p8N_8H9jXbRYPrDOkrs4rClVt1D","noCors":true},"savePdfWithGoogleDrive":true};</script><script>(function(){try{
         var marker = localStorage.getItem("factureMA_v1__initialized");
         var existing = localStorage.getItem("factureMA_v1");
         if (!marker) {
           if (!existing) {
             // First launch, write the seed data
-            var d = decodeURIComponent(escape(atob("eyJhcHAiOnsiYXBwTmFtZSI6IkZhY3R1cmVNQSIsImFwcFN1YnRpdGxlIjoiw4lkaXRpb24gTWFyb2MiLCJhcHBJY29uIjoiRiIsImFwcEljb25JbWFnZSI6IiIsInR2YVJhdGVzIjpbMCw3LDEwLDE0LDIwXSwiZGVmYXVsdFR2YSI6MjAsImRlZmF1bHRQYXltZW50TWV0aG9kIjoidmlyZW1lbnQiLCJwZGZTdHlsZSI6eyJ0ZW1wbGF0ZSI6Im1vZGVybiIsImZvbnRGYW1pbHkiOiJpbnRlciIsImZvbnRTaXplIjoibm9ybWFsIiwiaGVhZGVyU3R5bGUiOiJncmFkaWVudCIsInRhYmxlU3R5bGUiOiJzdHJpcGVkIiwic2hvd1JpYmJvbiI6dHJ1ZSwic2hvd1dhdGVybWFyayI6dHJ1ZSwic2hvd1NpZ25hdHVyZUJveCI6dHJ1ZSwic2hvd0xlZ2FsRm9vdGVyIjp0cnVlLCJhY2NlbnRCYXJzIjp0cnVlLCJyb3VuZGVkQ29ybmVycyI6dHJ1ZSwicGFnZU1hcmdpbiI6Im5vcm1hbCJ9LCJ5ZWFybHlSZXNldCI6dHJ1ZSwibnVtYmVyRm9ybWF0IjoiZnVsbCIsImNvbXBhbnlTd2l0Y2hBbmltYXRpb24iOiJjdXJ0YWluIiwiYXV0b0FwcGx5U3RvY2tPblNhbGUiOnRydWUsImF1dG9BcHBseVN0b2NrT25QdXJjaGFzZSI6dHJ1ZSwiYXV0b0NyZWF0ZUFydGljbGVzT25QdXJjaGFzZSI6dHJ1ZSwidWlUaGVtZSI6ImdsYXNzIiwiY2xvdWQiOnsiZW5hYmxlZCI6dHJ1ZSwicHJvdmlkZXIiOiJnb29nbGVTaGVldHMiLCJnb29nbGVTaGVldHMiOnsid2ViQXBwVXJsIjoiaHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J6N3htek9Ra1pZaFpJbHVPNkdnMXJGNXNtZGlhazhqMFpuYlBGcFhsTFBMZEFkc1NRTXMwTkxXOVBQdjZkcEJkOTIvZXhlYyIsInNlY3JldCI6IiIsInNwcmVhZHNoZWV0SWQiOiIxTmVmYmtjdHQ3QW4tSE9Ec1ZTVDl5VEtJZ0MyQVlCYWl6VFFUbzlqUzZPSSIsInNoZWV0TmFtZSI6Ik9wZXJhdGlvbnMiLCJub0NvcnMiOnRydWV9LCJlbWJlZEluRXhwb3J0Ijp0cnVlLCJhdXRvRW5hYmxlIjp0cnVlLCJzYXZlRGF0YVdpdGhHb29nbGUiOnRydWUsImxhc3RTeW5jQXQiOjE3ODExNzIyMTgyNDN9fSwiY29tcGFueSI6eyJpZCI6ImNvbXBhbnktbWFpbiIsIm5hbWUiOiJNYSBTb2Npw6l0w6kgU0FSTCIsImxlZ2FsRm9ybSI6IlNBUkwgYXUgY2FwaXRhbCBkZSAxMDAgMDAwIE1BRCIsImFkZHJlc3MiOiIxMjMgQm91bGV2YXJkIE1vaGFtbWVkIFYiLCJjaXR5IjoiMjAwMDAgQ2FzYWJsYW5jYSwgTWFyb2MiLCJwaG9uZSI6IisyMTIgNSAyMiAwMCAwMCAwMCIsImVtYWlsIjoiY29udGFjdEBtYXNvY2lldGUubWEiLCJ3ZWJzaXRlIjoid3d3Lm1hc29jaWV0ZS5tYSIsImljZSI6IjAwMDAwMDAwMDAwMDAwMCIsInJjIjoiMTIzNDU2IiwiaWYiOiIxMjM0NTY3OCIsImNuc3MiOiIxMjM0NTY3IiwicGF0ZW50ZSI6IjEyMzQ1Njc4IiwicmliIjoiMDAwIDAwMCAwMDAwMDAwMDAwMDAwMDAwIDAwIiwiYmFuayI6IkF0dGlqYXJpd2FmYSBCYW5rIiwiY2FwaXRhbCI6IjEwMCAwMDAgTUFEIiwibG9nbyI6IiIsInNpZ25hdHVyZSI6IiIsImZvb3RlciI6Ik1lcmNpIGRlIHZvdHJlIGNvbmZpYW5jZS4ifSwiY29tcGFuaWVzIjpbeyJpZCI6ImNvbXBhbnktbWFpbiIsIm5hbWUiOiJNYSBTb2Npw6l0w6kgU0FSTCIsImxlZ2FsRm9ybSI6IlNBUkwgYXUgY2FwaXRhbCBkZSAxMDAgMDAwIE1BRCIsImFkZHJlc3MiOiIxMjMgQm91bGV2YXJkIE1vaGFtbWVkIFYiLCJjaXR5IjoiMjAwMDAgQ2FzYWJsYW5jYSwgTWFyb2MiLCJwaG9uZSI6IisyMTIgNSAyMiAwMCAwMCAwMCIsImVtYWlsIjoiY29udGFjdEBtYXNvY2lldGUubWEiLCJ3ZWJzaXRlIjoid3d3Lm1hc29jaWV0ZS5tYSIsImljZSI6IjAwMDAwMDAwMDAwMDAwMCIsInJjIjoiMTIzNDU2IiwiaWYiOiIxMjM0NTY3OCIsImNuc3MiOiIxMjM0NTY3IiwicGF0ZW50ZSI6IjEyMzQ1Njc4IiwicmliIjoiMDAwIDAwMCAwMDAwMDAwMDAwMDAwMDAwIDAwIiwiYmFuayI6IkF0dGlqYXJpd2FmYSBCYW5rIiwiY2FwaXRhbCI6IjEwMCAwMDAgTUFEIiwibG9nbyI6IiIsInNpZ25hdHVyZSI6IiIsImZvb3RlciI6Ik1lcmNpIGRlIHZvdHJlIGNvbmZpYW5jZS4ifV0sImFjdGl2ZUNvbXBhbnlJZCI6ImNvbXBhbnktbWFpbiIsInRoZW1lIjp7InByaW1hcnkiOiIjMGVhNWU5Iiwic2Vjb25kYXJ5IjoiIzM4YmRmOCIsImFjY2VudCI6IiMwMjg0YzciLCJkYXJrIjoiIzBjNGE2ZSIsIm5hbWUiOiJCbGV1IGNpZWwiLCJiYWNrZ3JvdW5kIjoiI2ZmZmZmZiIsInVpQmFja2dyb3VuZCI6IiNmMGY5ZmYifSwiY2xpZW50cyI6W3siaWQiOiI4c3M4em9kcCIsIm5hbWUiOiJheiIsImljZSI6IiIsImFkZHJlc3MiOiIiLCJjaXR5IjoiIiwicGhvbmUiOiIiLCJlbWFpbCI6IiIsImNvbXBhbnlJZCI6ImNvbXBhbnktbWFpbiJ9XSwic3VwcGxpZXJzIjpbXSwiYXJ0aWNsZXMiOltdLCJkb2N1bWVudHMiOlt7ImlkIjoidzFtcW5oeGwiLCJjb21wYW55SWQiOiJjb21wYW55LW1haW4iLCJ0eXBlIjoiZmFjdHVyZSIsIm51bWJlciI6IkZBQy0yMDI2LTAwMDIiLCJkYXRlIjoiMjAyNi0wNi0xMSIsImR1ZURhdGUiOiIyMDI2LTA3LTExIiwiY2xpZW50SWQiOiI4c3M4em9kcCIsImxpbmVzIjpbXSwibm90ZXMiOiIiLCJjb25kaXRpb25zIjoiUGFpZW1lbnQgw6AgMzAgam91cnMuIiwic3RhdHVzIjoicGF5ZSIsImdsb2JhbERpc2NvdW50IjowLCJwYXltZW50TWV0aG9kIjoibm9uUGF5ZSJ9XSwiY291bnRlcnMiOnsiZGV2aXMiOjEsInByb2Zvcm1hIjoxLCJmYWN0dXJlIjoxLCJib25Db21tYW5kZSI6MSwiYm9uTGl2cmFpc29uIjoxLCJhdm9pciI6MSwiZmFjdHVyZUFjaGF0IjoxfSwiY29tcGFueUNvdW50ZXJzIjp7ImNvbXBhbnktbWFpbiI6eyJkZXZpcyI6MSwicHJvZm9ybWEiOjEsImZhY3R1cmUiOjEsImJvbkNvbW1hbmRlIjoxLCJib25MaXZyYWlzb24iOjEsImF2b2lyIjoxLCJmYWN0dXJlQWNoYXQiOjF9fSwiY291bnRlcnNCeVllYXIiOnsiY29tcGFueS1tYWluIjp7IjIwMjYiOnsiZGV2aXMiOjEsInByb2Zvcm1hIjoxLCJmYWN0dXJlIjozLCJib25Db21tYW5kZSI6MSwiYm9uTGl2cmFpc29uIjoxLCJhdm9pciI6MSwiZmFjdHVyZUFjaGF0IjoxfX19fQ==")));
+            var d = decodeURIComponent(escape(atob("eyJhcHAiOnsiYXBwTmFtZSI6IkZhY3R1cmVNQSIsImFwcFN1YnRpdGxlIjoiw4lkaXRpb24gTWFyb2MiLCJhcHBJY29uIjoiRiIsImFwcEljb25JbWFnZSI6IiIsInR2YVJhdGVzIjpbMCw3LDEwLDE0LDIwXSwiZGVmYXVsdFR2YSI6MjAsImRlZmF1bHRQYXltZW50TWV0aG9kIjoidmlyZW1lbnQiLCJwZGZTdHlsZSI6eyJ0ZW1wbGF0ZSI6Im1vZGVybiIsImZvbnRGYW1pbHkiOiJpbnRlciIsImZvbnRTaXplIjoibm9ybWFsIiwiaGVhZGVyU3R5bGUiOiJncmFkaWVudCIsInRhYmxlU3R5bGUiOiJzdHJpcGVkIiwic2hvd1JpYmJvbiI6dHJ1ZSwic2hvd1dhdGVybWFyayI6dHJ1ZSwic2hvd1NpZ25hdHVyZUJveCI6dHJ1ZSwic2hvd0xlZ2FsRm9vdGVyIjp0cnVlLCJhY2NlbnRCYXJzIjp0cnVlLCJyb3VuZGVkQ29ybmVycyI6dHJ1ZSwicGFnZU1hcmdpbiI6Im5vcm1hbCJ9LCJ5ZWFybHlSZXNldCI6dHJ1ZSwibnVtYmVyRm9ybWF0IjoiZnVsbCIsImNvbXBhbnlTd2l0Y2hBbmltYXRpb24iOiJjdXJ0YWluIiwiYXV0b0FwcGx5U3RvY2tPblNhbGUiOnRydWUsImF1dG9BcHBseVN0b2NrT25QdXJjaGFzZSI6dHJ1ZSwiYXV0b0NyZWF0ZUFydGljbGVzT25QdXJjaGFzZSI6dHJ1ZSwidWlUaGVtZSI6ImdsYXNzIiwiY2xvdWQiOnsiZW5hYmxlZCI6dHJ1ZSwicHJvdmlkZXIiOiJnb29nbGVTaGVldHMiLCJnb29nbGVTaGVldHMiOnsid2ViQXBwVXJsIjoiaHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J6THU3emxFVGhzNmhLWFNkM09WaVlxQUtxZy1FaTdNVjFsMjdRdXJXSG0xRm51N3BqdVdfdjZ5VFVSU2RrUEN0aHAvZXhlYyIsInNlY3JldCI6IiIsInNwcmVhZHNoZWV0SWQiOiIxN1FjZ21pM290V0g4ajFTdi1OUGI2TlRkUUx4eDlOY3NuWW84ZmFuaVFiRSIsInNoZWV0TmFtZSI6Ik9wZXJhdGlvbnMiLCJub0NvcnMiOnRydWV9LCJlbWJlZEluRXhwb3J0Ijp0cnVlLCJhdXRvRW5hYmxlIjp0cnVlLCJzYXZlRGF0YVdpdGhHb29nbGUiOnRydWUsImxhc3RTeW5jQXQiOjE3ODExODY2MDI5MTYsImF1dG9TeW5jU2Vjb25kcyI6NjAsImdvb2dsZURyaXZlIjp7IndlYkFwcFVybCI6Imh0dHBzOi8vc2NyaXB0Lmdvb2dsZS5jb20vbWFjcm9zL3MvQUtmeWNiekx1N3psRVRoczZoS1hTZDNPVmlZcUFLcWctRWk3TVYxbDI3UXVyV0htMUZudTdwanVXX3Y2eVRVUlNka1BDdGhwL2V4ZWMiLCJzZWNyZXQiOiIiLCJmb2xkZXJJZCI6IjE0d2pKNHA4Tl84SDlqWGJSWVByRE9rcnM0ckNsVnQxRCIsIm5vQ29ycyI6dHJ1ZX0sInNhdmVQZGZXaXRoR29vZ2xlRHJpdmUiOnRydWV9fSwiY29tcGFueSI6eyJpZCI6ImNvbXBhbnktbWFpbiIsIm5hbWUiOiJNYSBTb2Npw6l0w6kgU0FSTCIsImxlZ2FsRm9ybSI6IlNBUkwgYXUgY2FwaXRhbCBkZSAxMDAgMDAwIE1BRCIsImFkZHJlc3MiOiIxMjMgQm91bGV2YXJkIE1vaGFtbWVkIFYiLCJjaXR5IjoiMjAwMDAgQ2FzYWJsYW5jYSwgTWFyb2MiLCJwaG9uZSI6IisyMTIgNSAyMiAwMCAwMCAwMCIsImVtYWlsIjoiY29udGFjdEBtYXNvY2lldGUubWEiLCJ3ZWJzaXRlIjoid3d3Lm1hc29jaWV0ZS5tYSIsImljZSI6IjAwMDAwMDAwMDAwMDAwMCIsInJjIjoiMTIzNDU2IiwiaWYiOiIxMjM0NTY3OCIsImNuc3MiOiIxMjM0NTY3IiwicGF0ZW50ZSI6IjEyMzQ1Njc4IiwicmliIjoiMDAwIDAwMCAwMDAwMDAwMDAwMDAwMDAwIDAwIiwiYmFuayI6IkF0dGlqYXJpd2FmYSBCYW5rIiwiY2FwaXRhbCI6IjEwMCAwMDAgTUFEIiwibG9nbyI6IiIsInNpZ25hdHVyZSI6IiIsImZvb3RlciI6Ik1lcmNpIGRlIHZvdHJlIGNvbmZpYW5jZS4ifSwiY29tcGFuaWVzIjpbeyJpZCI6ImNvbXBhbnktbWFpbiIsIm5hbWUiOiJNYSBTb2Npw6l0w6kgU0FSTCIsImxlZ2FsRm9ybSI6IlNBUkwgYXUgY2FwaXRhbCBkZSAxMDAgMDAwIE1BRCIsImFkZHJlc3MiOiIxMjMgQm91bGV2YXJkIE1vaGFtbWVkIFYiLCJjaXR5IjoiMjAwMDAgQ2FzYWJsYW5jYSwgTWFyb2MiLCJwaG9uZSI6IisyMTIgNSAyMiAwMCAwMCAwMCIsImVtYWlsIjoiY29udGFjdEBtYXNvY2lldGUubWEiLCJ3ZWJzaXRlIjoid3d3Lm1hc29jaWV0ZS5tYSIsImljZSI6IjAwMDAwMDAwMDAwMDAwMCIsInJjIjoiMTIzNDU2IiwiaWYiOiIxMjM0NTY3OCIsImNuc3MiOiIxMjM0NTY3IiwicGF0ZW50ZSI6IjEyMzQ1Njc4IiwicmliIjoiMDAwIDAwMCAwMDAwMDAwMDAwMDAwMDAwIDAwIiwiYmFuayI6IkF0dGlqYXJpd2FmYSBCYW5rIiwiY2FwaXRhbCI6IjEwMCAwMDAgTUFEIiwibG9nbyI6IiIsInNpZ25hdHVyZSI6IiIsImZvb3RlciI6Ik1lcmNpIGRlIHZvdHJlIGNvbmZpYW5jZS4ifV0sImFjdGl2ZUNvbXBhbnlJZCI6ImNvbXBhbnktbWFpbiIsInRoZW1lIjp7InByaW1hcnkiOiIjMGVhNWU5Iiwic2Vjb25kYXJ5IjoiIzM4YmRmOCIsImFjY2VudCI6IiMwMjg0YzciLCJkYXJrIjoiIzBjNGE2ZSIsIm5hbWUiOiJCbGV1IGNpZWwiLCJiYWNrZ3JvdW5kIjoiI2ZmZmZmZiIsInVpQmFja2dyb3VuZCI6IiNmMGY5ZmYifSwiY2xpZW50cyI6W3siaWQiOiI4c3M4em9kcCIsIm5hbWUiOiJheiIsImljZSI6IiIsImFkZHJlc3MiOiIiLCJjaXR5IjoiIiwicGhvbmUiOiIiLCJlbWFpbCI6IiIsImNvbXBhbnlJZCI6ImNvbXBhbnktbWFpbiJ9LHsiaWQiOiIwdHJuM29tdSIsIm5hbWUiOiJhc2ZzZGQiLCJpY2UiOiIiLCJhZGRyZXNzIjoiIiwiY2l0eSI6IiIsInBob25lIjoiIiwiZW1haWwiOiIiLCJjb21wYW55SWQiOiJjb21wYW55LW1haW4ifV0sInN1cHBsaWVycyI6W10sImFydGljbGVzIjpbXSwiZG9jdW1lbnRzIjpbeyJpZCI6Ijg5OWw2ZnRuIiwiY29tcGFueUlkIjoiY29tcGFueS1tYWluIiwidHlwZSI6ImZhY3R1cmUiLCJudW1iZXIiOiJGQUMtMjAyNi0wMDAzIiwiZGF0ZSI6IjIwMjYtMDYtMTEiLCJkdWVEYXRlIjoiMjAyNi0wNy0xMSIsImNsaWVudElkIjoiMHRybjNvbXUiLCJsaW5lcyI6W10sIm5vdGVzIjoiIiwiY29uZGl0aW9ucyI6IlBhaWVtZW50IMOgIDMwIGpvdXJzLiIsInN0YXR1cyI6InBheWUiLCJnbG9iYWxEaXNjb3VudCI6MCwicGF5bWVudE1ldGhvZCI6Im5vblBheWUifSx7ImlkIjoidzFtcW5oeGwiLCJjb21wYW55SWQiOiJjb21wYW55LW1haW4iLCJ0eXBlIjoiZmFjdHVyZSIsIm51bWJlciI6IkZBQy0yMDI2LTAwMDIiLCJkYXRlIjoiMjAyNi0wNi0xMSIsImR1ZURhdGUiOiIyMDI2LTA3LTExIiwiY2xpZW50SWQiOiI4c3M4em9kcCIsImxpbmVzIjpbXSwibm90ZXMiOiIiLCJjb25kaXRpb25zIjoiUGFpZW1lbnQgw6AgMzAgam91cnMuIiwic3RhdHVzIjoicGF5ZSIsImdsb2JhbERpc2NvdW50IjowLCJwYXltZW50TWV0aG9kIjoibm9uUGF5ZSJ9XSwiY291bnRlcnMiOnsiZGV2aXMiOjEsInByb2Zvcm1hIjoxLCJmYWN0dXJlIjoxLCJib25Db21tYW5kZSI6MSwiYm9uTGl2cmFpc29uIjoxLCJhdm9pciI6MSwiZmFjdHVyZUFjaGF0IjoxfSwiY29tcGFueUNvdW50ZXJzIjp7ImNvbXBhbnktbWFpbiI6eyJkZXZpcyI6MSwicHJvZm9ybWEiOjEsImZhY3R1cmUiOjEsImJvbkNvbW1hbmRlIjoxLCJib25MaXZyYWlzb24iOjEsImF2b2lyIjoxLCJmYWN0dXJlQWNoYXQiOjF9fSwiY291bnRlcnNCeVllYXIiOnsiY29tcGFueS1tYWluIjp7IjIwMjYiOnsiZGV2aXMiOjEsInByb2Zvcm1hIjoxLCJmYWN0dXJlIjo0LCJib25Db21tYW5kZSI6MSwiYm9uTGl2cmFpc29uIjoxLCJhdm9pciI6MSwiZmFjdHVyZUFjaGF0IjoxfX19fQ==")));
             localStorage.setItem("factureMA_v1", d);
           }
           // else: keep existing data (user upgrading)
@@ -524,1168 +524,466 @@
 })();
 </script>
 <script>
-/**
- * ============================================================
- *  FactureMA — Module de synchronisation GAS
- *  Ce module remplace TOUTE la gestion Google OAuth / cookies
- *  et ajoute la synchronisation en temps réel via Google Apps Script.
- * ============================================================
- *
- *  INSTRUCTIONS :
- *  1. Remplacez le contenu de la balise <script> "FactureMASaveOnlineMenu"
- *     (environ lignes 504-1000 du fichier HTML original) par ce module.
- *  2. OU collez ce script juste APRÈS la balise <script> du module
- *     "FactureMASaveOnlineMenu" existant.
- *  3. Remplacez la valeur de GAS_URL par https://script.google.com/macros/s/AKfycbz7xmzOQkZYhZIluO6Gg1rF5smdiak8j0ZnbPFpXlLPLdAdsSQMs0NLW9PPv6dpBd92/exec
- *
- *  Ce module :
- *  - Supprime les boutons Google Drive / Google Sheets / Sync du menu
- *  - Ajoute un bouton "☁️ Synchronisation" dans la sidebar
- *  - Charge les données depuis GAS au démarrage de l'application
- *  - Sauvegarde automatiquement les changements vers GAS
- *  - Synchronise périodiquement les données entre appareils
- *  - AUCUN cookie tiers, AUCUN OAuth, AUCUN SDK Google
- * ============================================================
- */
-
-(function () {
+(function(){
   'use strict';
-  if (window.FactureMAGasSync) return; // Protection double chargement
+  if (window.FactureMASaveOnlineMenu) return;
 
-  // ═══════════════════════════════════════════════════════════
-  //  CONFIGURATION — Collez votre URL GAS ici
-  // ═══════════════════════════════════════════════════════════
-  var GAS_URL = 'VOTRE_URL_WEB_APP_GOOGLE_APPS_SCRIPT';
-  var API_KEY = ''; // Laisser vide si pas de clé configurée dans le GAS
-  var SYNC_INTERVAL = 30; // Secondes entre chaque synchronisation automatique
-  var DEBOUNCE_SAVE = 2000; // Millisecondes avant de sauvegarder après un changement
+  var KEY = 'factureMA_save_online_menu_settings';
   var STATE_KEY = 'factureMA_v1';
-  var SETTINGS_KEY = 'factureMA_gas_sync_settings';
+  var GOOGLE_SESSION_KEY = 'factureMA_auth_google';
 
-  // ═══════════════════════════════════════════════════════════
-  //  ÉTAT INTERNE DU MODULE
-  // ═══════════════════════════════════════════════════════════
-  var saveTimer = null;
-  var syncTimer = null;
-  var isSyncing = false;
-  var isSaving = false;
-  var lastSyncTimestamp = null;
-  var lastSavedHash = '';
-  var pendingState = null;
-  var syncCallbacks = [];
-  var onlineStatus = navigator.onLine;
+  var providerMeta = [
+    { id:'firebase', label:'Firebase Firestore', emoji:'🔥', desc:'Configurer Firebase Firestore comme fournisseur de synchronisation cloud.' },
+    { id:'supabase', label:'Supabase', emoji:'⚡', desc:'Configurer Supabase/Postgres pour sauvegarder et récupérer les données.' },
+    { id:'appwrite', label:'Appwrite', emoji:'🧩', desc:'Configurer Appwrite Database pour la sauvegarde en ligne.' },
+    { id:'pocketbase', label:'PocketBase', emoji:'📦', desc:'Configurer PocketBase comme backend léger de synchronisation.' },
+    { id:'nocodb', label:'NocoDB', emoji:'🧮', desc:'Configurer NocoDB pour stocker les données dans une base/table.' },
+    { id:'directus', label:'Directus', emoji:'🎯', desc:'Configurer Directus comme CMS/API de données.' },
+    { id:'neon', label:'Neon', emoji:'🌌', desc:'Configurer Neon Postgres serverless via API.' },
+    { id:'mongodb', label:'MongoDB Atlas', emoji:'🍃', desc:'Configurer MongoDB Atlas Data API pour la sauvegarde.' },
+    { id:'custom', label:'API REST personnalisée', emoji:'🔧', desc:'Configurer votre propre endpoint REST GET + PUT.' }
+  ];
 
-  // ═══════════════════════════════════════════════════════════
-  //  UTILITAIRES
-  // ═══════════════════════════════════════════════════════════
 
-  function esc(s) {
-    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
-      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
-    });
-  }
-
-  function hashCode(str) {
-    var hash = 0, i, chr;
-    if (!str || str.length === 0) return hash;
-    for (i = 0; i < str.length; i++) {
-      chr = str.charCodeAt(i);
-      hash = ((hash << 5) - hash) + chr;
-      hash |= 0;
+  var providerFields = {
+    firebase: {
+      storageKey: 'config',
+      note: 'Collez ou saisissez la configuration Firebase. Collection par défaut : factureMA, Document ID : main.',
+      fields: [
+        ['apiKey','API Key *',''], ['projectId','Project ID *',''], ['appId','App ID *',''], ['authDomain','Auth Domain',''], ['collection','Collection','factureMA'], ['documentId','Document ID','main']
+      ]
+    },
+    supabase: {
+      storageKey: 'supabase',
+      note: 'Créez une table avec : id text primary key, data jsonb, updated_at timestamptz.',
+      fields: [['url','URL Supabase *','https://xxxx.supabase.co'], ['anonKey','Anon Key (clé publique) *',''], ['table','Nom de la table','app_state'], ['rowId','ID de la ligne','main']]
+    },
+    appwrite: {
+      storageKey: 'appwrite',
+      note: 'Créez une collection avec un attribut texte payload.',
+      fields: [['endpoint','Endpoint *','https://cloud.appwrite.io/v1'], ['projectId','Project ID *',''], ['databaseId','Database ID *',''], ['collectionId','Collection ID *',''], ['documentId','Document ID','main'], ['apiKey','API Key (optionnel)','']]
+    },
+    pocketbase: {
+      storageKey: 'pocketbase',
+      note: 'Créez une collection avec un champ data (texte long).',
+      fields: [['url','URL PocketBase *','https://pb.exemple.com'], ['collection','Collection','app_state'], ['recordId','Record ID','main'], ['token','Token (optionnel)','']]
+    },
+    nocodb: {
+      storageKey: 'nocodb',
+      note: 'Créez une table avec un champ data (LongText). L’ID de la table se trouve dans l’URL.',
+      fields: [['url','URL NocoDB *','https://app.nocodb.com'], ['token','API Token (xc-token) *',''], ['tableId','Table ID *',''], ['recordId','Record ID','1']]
+    },
+    directus: {
+      storageKey: 'directus',
+      note: 'Créez une collection avec un champ texte data.',
+      fields: [['url','URL Directus *',''], ['token','Access Token *',''], ['collection','Collection *','app_state'], ['itemId','Item ID','1']]
+    },
+    neon: {
+      storageKey: 'neon',
+      note: 'Neon nécessite une API REST/PostgREST ou une edge function accessible depuis le navigateur.',
+      fields: [['url','URL REST (PostgREST) *','https://api.exemple.com'], ['apiKey','API Key',''], ['table','Table','app_state'], ['rowId','Row ID','main']]
+    },
+    mongodb: {
+      storageKey: 'mongodb',
+      note: 'Configurez MongoDB Atlas Data API ou un middleware HTTP compatible.',
+      fields: [['endpoint','Data API Endpoint *',''], ['apiKey','API Key *',''], ['dataSource','Data Source *',''], ['database','Database *',''], ['collection','Collection','app_state'], ['documentId','Document ID','main']]
+    },
+    custom: {
+      storageKey: 'custom',
+      note: 'Endpoint qui répond à GET (lecture JSON) et PUT (écriture JSON).',
+      fields: [['url','URL endpoint *',''], ['headerName','Header d\'auth','Authorization'], ['headerValue','Valeur du header','Bearer xxx']]
     }
-    return hash;
-  }
+  };
 
-  function generateId() {
-    return Date.now().toString(36) + Math.random().toString(36).substr(2, 9);
-  }
+  var defaultProviders = providerMeta.reduce(function(acc, p){ acc[p.id] = false; return acc; }, {});
+  var defaults = { drive: true, sheets: true, sync: true, providers: defaultProviders };
+  var syncing = false;
 
-  function loadSettings() {
+  function load(){
     try {
-      return JSON.parse(localStorage.getItem(SETTINGS_KEY) || '{}');
-    } catch (e) {
-      return {};
-    }
+      var parsed = JSON.parse(localStorage.getItem(KEY) || '{}');
+      var out = Object.assign({}, defaults, parsed || {});
+      out.providers = Object.assign({}, defaultProviders, (parsed && parsed.providers) || {});
+      return out;
+    } catch(e){ return { drive:true, sheets:true, sync:true, providers:Object.assign({}, defaultProviders) }; }
   }
-
-  function saveSettings(patch) {
-    var current = loadSettings();
+  function save(patch){
+    var current = load();
     var next = Object.assign({}, current, patch || {});
-    try {
-      localStorage.setItem(SETTINGS_KEY, JSON.stringify(next));
-    } catch (e) { /* ignore */ }
-    refreshPanels();
+    if (patch && patch.providers) next.providers = Object.assign({}, current.providers, patch.providers);
+    try { localStorage.setItem(KEY, JSON.stringify(next)); } catch(e) {}
+    renderSettingsPanel();
+    ensureMenu();
     return next;
   }
-
-  function getState() {
-    try {
-      return JSON.parse(localStorage.getItem(STATE_KEY) || '{}');
-    } catch (e) {
-      return {};
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+  function norm(s){ return String(s || '').replace(/\s+/g, ' ').trim(); }
+  function sleep(ms){ return new Promise(function(resolve){ setTimeout(resolve, ms); }); }
+  async function waitFor(fn, timeout){
+    var end = Date.now() + (timeout || 5000);
+    while (Date.now() < end) {
+      try { var v = fn(); if (v) return v; } catch(e) {}
+      await sleep(120);
     }
+    return null;
   }
 
-  function setState(state) {
-    try {
-      localStorage.setItem(STATE_KEY, JSON.stringify(state || {}));
-    } catch (e) { /* ignore */ }
+  async function sha256(text){
+    var data = new TextEncoder().encode(text || '');
+    var buf = await crypto.subtle.digest('SHA-256', data);
+    return Array.prototype.map.call(new Uint8Array(buf), function(x){ return x.toString(16).padStart(2, '0'); }).join('');
   }
-
-  function sleep(ms) {
-    return new Promise(function (resolve) { setTimeout(resolve, ms); });
+  function getAuth(){
+    try { return ((JSON.parse(localStorage.getItem(STATE_KEY) || '{}').app || {}).auth) || {}; }
+    catch(e){ return {}; }
   }
-
-  // ═══════════════════════════════════════════════════════════
-  //  NOTIFICATION TOAST
-  // ═══════════════════════════════════════════════════════════
-
-  var toastTimer = null;
-
-  function notify(message, type) {
-    clearTimeout(toastTimer);
-    var id = 'fm-gas-toast';
-    var old = document.getElementById(id);
-    if (old) old.remove();
-
-    var el = document.createElement('div');
-    el.id = id;
-    el.textContent = message;
-    el.style.cssText =
-      'position:fixed;right:18px;bottom:18px;z-index:2147483647;' +
-      'padding:12px 16px;border-radius:14px;color:white;' +
-      'font:700 12px system-ui,-apple-system,Segoe UI,sans-serif;' +
-      'box-shadow:0 12px 30px rgba(15,23,42,.28);max-width:380px;' +
-      'line-height:1.4;transition:opacity .3s;' +
-      'background:' + (type === 'error'
-        ? 'linear-gradient(135deg,#ef4444,#b91c1c)'
-        : type === 'warning'
-          ? 'linear-gradient(135deg,#f59e0b,#d97706)'
-          : 'linear-gradient(135deg,#0ea5e9,#0f766e)');
-
-    document.body.appendChild(el);
-    toastTimer = setTimeout(function () {
-      el.style.opacity = '0';
-      setTimeout(function () { el.remove(); }, 300);
-    }, type === 'error' ? 5500 : 3500);
+  function isSaveOnlineProtected(){
+    var a = getAuth();
+    return !!(a.requireGooglePassword && a.googlePasswordHash);
   }
+  function isSaveOnlineUnlocked(){ return sessionStorage.getItem(GOOGLE_SESSION_KEY) === '1'; }
+  function setSaveOnlineUnlocked(v){ v ? sessionStorage.setItem(GOOGLE_SESSION_KEY, '1') : sessionStorage.removeItem(GOOGLE_SESSION_KEY); }
 
-  // ═══════════════════════════════════════════════════════════
-  //  REQUÊTES HTTP VERS GAS (SANS COOKIES)
-  // ═══════════════════════════════════════════════════════════
-
-  /**
-   * Effectue une requête GET vers GAS pour récupérer les données
-   * AUCUN cookie n'est envoyé — uniquement du JSON
-   */
-  async function gasGet() {
-    var url = GAS_URL;
-    if (API_KEY) url += (url.indexOf('?') === -1 ? '?' : '&') + 'key=' + encodeURIComponent(API_KEY);
-
-    var response = await fetch(url, {
-      method: 'GET',
-      mode: 'cors',           // Autorise cross-origin SANS cookies
-      cache: 'no-cache',       // Toujours récupérer les données fraîches
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      }
-      // NOTE : PAS de credentials: 'include' — aucun cookie envoyé !
-    });
-
-    if (!response.ok) {
-      throw new Error('HTTP ' + response.status + ': ' + response.statusText);
-    }
-
-    var data = await response.json();
-
-    if (!data.success) {
-      throw new Error(data.error || 'Erreur serveur GAS');
-    }
-
-    return data;
-  }
-
-  /**
-   * Effectue une requête POST vers GAS pour sauvegarder des données
-   * AUCUN cookie n'est envoyé — uniquement du JSON dans le body
-   */
-  async function gasPost(payload) {
-    var url = GAS_URL;
-    if (API_KEY) url += (url.indexOf('?') === -1 ? '?' : '&') + 'key=' + encodeURIComponent(API_KEY);
-
-    var response = await fetch(url, {
-      method: 'POST',
-      mode: 'cors',            // Autorise cross-origin SANS cookies
-      cache: 'no-cache',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      // NOTE : PAS de credentials: 'include' — aucun cookie envoyé !
-      body: JSON.stringify(payload)
-    });
-
-    if (!response.ok) {
-      throw new Error('HTTP ' + response.status + ': ' + response.statusText);
-    }
-
-    var data = await response.json();
-
-    if (!data.success) {
-      throw new Error(data.error || 'Erreur serveur GAS');
-    }
-
-    return data;
-  }
-
-  // ═══════════════════════════════════════════════════════════
-  //  CHARGEMENT INITIAL DES DONNÉES (FETCH ON LOAD)
-  // ═══════════════════════════════════════════════════════════
-
-  /**
-   * Charge les données depuis GAS au démarrage de l'application.
-   * Exécuté automatiquement dès que la page est prête.
-   * Cette fonction est le cœur de la synchronisation — elle permet
-   * à N'IMPORTE QUEL appareil de récupérer l'état à jour instantanément.
-   */
-  async function loadFromGas() {
-    if (isSyncing || !GAS_URL || GAS_URL === 'VOTRE_URL_WEB_APP_GOOGLE_APPS_SCRIPT') {
-      return false;
-    }
-
-    isSyncing = true;
-    try {
-      var settings = loadSettings();
-
-      // Si la synchro n'est pas activée, ne pas charger
-      if (!settings.enabled) return false;
-
-      notify('⏳ Chargement des données depuis le cloud...', 'success');
-
-      var response = await gasGet();
-
-      if (response.data) {
-        var gasState = response.data;
-        var localState = getState();
-        var localJson = localStorage.getItem(STATE_KEY) || '{}';
-        var gasJson = JSON.stringify(gasState);
-
-        // Comparer les horodatages pour éviter d'écraser des données locales plus récentes
-        var localModified = getLastModified(localState);
-        var gasModified = getLastModified(gasState);
-
-        if (gasJson !== localJson) {
-          // Si le cloud est plus récent OU si c'est le premier chargement
-          if (!localModified || gasModified >= localModified || settings.forceSync) {
-            localStorage.setItem(STATE_KEY, gasJson);
-            lastSyncTimestamp = response.timestamp;
-            lastSavedHash = hashCode(gasJson);
-            saveSettings({ forceSync: false });
-
-            notify('✅ Données synchronisées depuis le cloud', 'success');
-
-            // Déclencher un rechargement si l'application React est déjà montée
-            triggerReactUpdate();
-
-            return true;
-          }
-        } else {
-          notify('✅ Données déjà à jour', 'success');
-          lastSyncTimestamp = response.timestamp;
-          return false;
-        }
-      }
-
-      return false;
-    } catch (err) {
-      console.warn('[FactureMA GAS] Erreur chargement:', err);
-
-      if (err.message && err.message.indexOf('Failed to fetch') !== -1) {
-        notify('⚠️ Impossible de joindre le serveur — mode hors-ligne', 'warning');
-      } else {
-        notify('❌ Erreur de synchronisation : ' + (err.message || err), 'error');
-      }
-
-      saveSettings({ lastError: err.message || String(err) });
-      return false;
-    } finally {
-      isSyncing = false;
-    }
-  }
-
-  /**
-   * Récupère la date de dernière modification depuis l'état
-   */
-  function getLastModified(state) {
-    if (!state) return null;
-    var dates = [];
-
-    // Chercher dans les documents
-    (state.documents || []).forEach(function (doc) {
-      if (doc.modified) dates.push(doc.modified);
-      if (doc.created) dates.push(doc.created);
-    });
-
-    // Chercher dans les métadonnées
-    if (state._lastModified) dates.push(state._lastModified);
-    if (state._timestamp) dates.push(state._timestamp);
-
-    dates.sort().reverse();
-    return dates[0] || null;
-  }
-
-  // ═══════════════════════════════════════════════════════════
-  //  SAUVEGARDE VERS GAS (POST DATA)
-  // ═══════════════════════════════════════════════════════════
-
-  /**
-   * Sauvegarde l'état complet vers GAS
-   * Utilise un debounce pour éviter de spammer le serveur
-   */
-  function scheduleSaveToGas() {
-    var settings = loadSettings();
-    if (!settings.enabled || !GAS_URL || GAS_URL === 'VOTRE_URL_WEB_APP_GOOGLE_APPS_SCRIPT') return;
-
-    clearTimeout(saveTimer);
-    saveTimer = setTimeout(function () {
-      saveToGas();
-    }, DEBOUNCE_SAVE);
-  }
-
-  /**
-   * Sauvegarde réelle vers GAS
-   */
-  async function saveToGas() {
-    if (isSaving || isSyncing) return;
-
-    var stateJson = localStorage.getItem(STATE_KEY);
-    if (!stateJson) return;
-
-    // Vérifier si les données ont réellement changé
-    var currentHash = hashCode(stateJson);
-    if (currentHash === lastSavedHash) return;
-
-    isSaving = true;
-    try {
-      var state = JSON.parse(stateJson);
-      state._lastModified = new Date().toISOString();
-      state._timestamp = Date.now();
-
-      await gasPost({
-        action: 'saveState',
-        state: state
+  function passwordModal(){
+    return new Promise(function(resolve){
+      var overlay = document.createElement('div');
+      overlay.style.cssText = 'position:fixed;inset:0;background:rgba(15,23,42,.55);z-index:2147483647;display:flex;align-items:center;justify-content:center;padding:18px;font-family:system-ui,-apple-system,Segoe UI,sans-serif';
+      overlay.innerHTML = '<form style="width:min(420px,94vw);background:white;border-radius:20px;box-shadow:0 25px 80px rgba(15,23,42,.35);overflow:hidden;border:1px solid rgba(255,255,255,.7)">' +
+        '<div style="padding:18px 20px;background:linear-gradient(135deg,#0ea5e9,#0f766e);color:white"><div style="font-size:18px;font-weight:900">🔐 Save en ligne protégé</div><div style="font-size:12px;opacity:.9;margin-top:3px">Saisissez le mot de passe pour ouvrir Save en ligne.</div></div>' +
+        '<div style="padding:16px;display:grid;gap:10px"><input type="password" autofocus placeholder="Mot de passe" style="width:100%;box-sizing:border-box;border:1px solid #cbd5e1;border-radius:12px;padding:11px 12px;font-size:14px;outline:none"><div data-err style="display:none;color:#dc2626;background:#fef2f2;border:1px solid #fecaca;border-radius:10px;padding:8px;font-size:12px;font-weight:700">❌ Mot de passe incorrect</div></div>' +
+        '<div style="display:flex;gap:8px;justify-content:flex-end;padding:12px 16px;border-top:1px solid #e2e8f0;background:#f8fafc"><button type="button" data-cancel style="border:1px solid #cbd5e1;background:white;border-radius:10px;padding:9px 12px;font-weight:800;cursor:pointer">Annuler</button><button type="submit" style="border:0;background:linear-gradient(135deg,#0ea5e9,#0f766e);color:white;border-radius:10px;padding:9px 14px;font-weight:900;cursor:pointer">Ouvrir</button></div>' +
+        '</form>';
+      var form = overlay.querySelector('form'), input = overlay.querySelector('input'), err = overlay.querySelector('[data-err]');
+      function done(v){ overlay.remove(); resolve(v); }
+      overlay.addEventListener('click', function(e){ if (e.target === overlay || e.target.closest('[data-cancel]')) done(false); });
+      form.addEventListener('submit', async function(e){
+        e.preventDefault();
+        var hash = getAuth().googlePasswordHash || '';
+        if (hash && await sha256(input.value) === hash) { setSaveOnlineUnlocked(true); done(true); }
+        else { err.style.display = 'block'; input.value = ''; input.focus(); }
       });
-
-      lastSavedHash = hashCode(JSON.stringify(state));
-      saveSettings({
-        lastSavedAt: new Date().toISOString(),
-        lastError: ''
-      });
-
-    } catch (err) {
-      console.warn('[FactureMA GAS] Erreur sauvegarde:', err);
-      saveSettings({ lastError: err.message || String(err) });
-    } finally {
-      isSaving = false;
-    }
-  }
-
-  /**
-   * Sauvegarde forcée immédiate (bouton "Sauvegarder maintenant")
-   */
-  async function forceSaveNow() {
-    if (isSaving) {
-      notify('⏳ Sauvegarde déjà en cours...', 'warning');
-      return;
-    }
-
-    clearTimeout(saveTimer);
-
-    var settings = loadSettings();
-    if (!settings.enabled) {
-      notify('⚠️ Activez la synchronisation d\'abord', 'warning');
-      return;
-    }
-
-    try {
-      notify('⏳ Sauvegarde en cours...', 'success');
-      isSaving = true;
-
-      var stateJson = localStorage.getItem(STATE_KEY);
-      var state = JSON.parse(stateJson || '{}');
-      state._lastModified = new Date().toISOString();
-      state._timestamp = Date.now();
-
-      await gasPost({
-        action: 'saveState',
-        state: state
-      });
-
-      lastSavedHash = hashCode(JSON.stringify(state));
-      saveSettings({
-        lastSavedAt: new Date().toISOString(),
-        lastError: ''
-      });
-
-      notify('✅ Données sauvegardées dans le cloud avec succès !', 'success');
-    } catch (err) {
-      notify('❌ Erreur : ' + (err.message || err), 'error');
-      saveSettings({ lastError: err.message || String(err) });
-    } finally {
-      isSaving = false;
-    }
-  }
-
-  // ═══════════════════════════════════════════════════════════
-  //  SYNCHRONISATION AUTOMATIQUE (POLLING)
-  // ═══════════════════════════════════════════════════════════
-
-  /**
-   * Démarre la synchronisation automatique périodique
-   * Vérifie les changements toutes les SYNC_INTERVAL secondes
-   */
-  function startAutoSync() {
-    stopAutoSync();
-
-    var settings = loadSettings();
-    if (!settings.enabled || !GAS_URL || GAS_URL === 'VOTRE_URL_WEB_APP_GOOGLE_APPS_SCRIPT') return;
-
-    var interval = (settings.syncInterval || SYNC_INTERVAL) * 1000;
-
-    syncTimer = setInterval(async function () {
-      if (!navigator.onLine || isSyncing || isSaving) return;
-
-      try {
-        isSyncing = true;
-        var response = await gasGet();
-
-        if (response.data) {
-          var gasJson = JSON.stringify(response.data);
-          var localJson = localStorage.getItem(STATE_KEY) || '{}';
-
-          if (gasJson !== localJson) {
-            var gasModified = getLastModified(response.data);
-            var localModified = getLastModified(getState());
-
-            // Le cloud est plus récent → mettre à jour le local
-            if (!localModified || gasModified > localModified) {
-              localStorage.setItem(STATE_KEY, gasJson);
-              lastSyncTimestamp = response.timestamp;
-              lastSavedHash = hashCode(gasJson);
-
-              notify('🔄 Données mises à jour depuis un autre appareil', 'success');
-              triggerReactUpdate();
-            }
-          }
-        }
-      } catch (err) {
-        // Erreur silencieuse pendant le polling automatique
-        console.warn('[FactureMA GAS] Auto-sync erreur:', err.message);
-      } finally {
-        isSyncing = false;
-      }
-    }, interval);
-  }
-
-  /**
-   * Arrête la synchronisation automatique
-   */
-  function stopAutoSync() {
-    if (syncTimer) {
-      clearInterval(syncTimer);
-      syncTimer = null;
-    }
-  }
-
-  // ═══════════════════════════════════════════════════════════
-  //  DÉCLENCHEMENT DE LA MISE À JOUR REACT
-  // ═══════════════════════════════════════════════════════════
-
-  /**
-   * Force l'application React à relire l'état depuis localStorage
-   * sans recharger complètement la page
-   */
-  function triggerReactUpdate() {
-    // Méthode 1 : Déclencher un événement personnalisé
-    window.dispatchEvent(new CustomEvent('factureMA-state-updated'));
-
-    // Méthode 2 : Si l'événement ne suffit pas, recharger la page
-    // (avec un léger délai pour permettre à l'utilisateur de voir la notification)
-    // setTimeout(function() { location.reload(); }, 800);
-  }
-
-  // ═══════════════════════════════════════════════════════════
-  //  HOOK localStorage — DÉTECTION DES CHANGEMENTS
-  // ═══════════════════════════════════════════════════════════
-
-  /**
-   * Intercepte les écritures dans localStorage pour synchroniser automatiquement
-   * Chaque fois que l'application React sauvegarde son état, on le pousse vers GAS
-   */
-  var originalSetItem = Storage.prototype.setItem;
-  var _alreadyHooked = false;
-
-  function hookLocalStorage() {
-    if (_alreadyHooked) return;
-    _alreadyHooked = true;
-
-    Storage.prototype.setItem = function (key, value) {
-      var result = originalSetItem.apply(this, arguments);
-
-      if (key === STATE_KEY) {
-        // Déclencher une sauvegarde vers GAS après un délai
-        scheduleSaveToGas();
-      }
-
-      return result;
-    };
-  }
-
-  // ═══════════════════════════════════════════════════════════
-  //  OPÉRATIONS INDIVIDUELLES (CRUD)
-  // ═══════════════════════════════════════════════════════════
-
-  /**
-   * Sauvegarde une facture individuelle via POST
-   */
-  async function saveInvoiceToGas(invoice) {
-    try {
-      await gasPost({ action: 'saveInvoice', invoice: invoice });
-      return true;
-    } catch (e) {
-      console.warn('[FactureMA GAS] saveInvoice:', e);
-      return false;
-    }
-  }
-
-  /**
-   * Supprime une facture via POST
-   */
-  async function deleteInvoiceFromGas(invoiceId) {
-    try {
-      await gasPost({ action: 'deleteInvoice', invoiceId: invoiceId });
-      return true;
-    } catch (e) {
-      console.warn('[FactureMA GAS] deleteInvoice:', e);
-      return false;
-    }
-  }
-
-  /**
-   * Sauvegarde un client via POST
-   */
-  async function saveClientToGas(client) {
-    try {
-      await gasPost({ action: 'saveClient', client: client });
-      return true;
-    } catch (e) {
-      console.warn('[FactureMA GAS] saveClient:', e);
-      return false;
-    }
-  }
-
-  /**
-   * Sauvegarde un article via POST
-   */
-  async function saveArticleToGas(article) {
-    try {
-      await gasPost({ action: 'saveArticle', article: article });
-      return true;
-    } catch (e) {
-      console.warn('[FactureMA GAS] saveArticle:', e);
-      return false;
-    }
-  }
-
-  // ═══════════════════════════════════════════════════════════
-  //  GESTION DE LA CONNEXION RÉSEAU
-  // ═══════════════════════════════════════════════════════════
-
-  window.addEventListener('online', function () {
-    onlineStatus = true;
-    notify('🌐 Connexion rétablie — synchronisation en cours...', 'success');
-    loadFromGas().then(function () {
-      startAutoSync();
+      document.body.appendChild(overlay);
+      setTimeout(function(){ input.focus(); }, 80);
     });
-  });
-
-  window.addEventListener('offline', function () {
-    onlineStatus = false;
-    stopAutoSync();
-    notify('📡 Mode hors-ligne — les changements seront synchronisés au retour de la connexion', 'warning');
-  });
-
-  // ═══════════════════════════════════════════════════════════
-  //  INTERFACE UTILISATEUR — PANNEAU DE SYNCHRONISATION
-  // ═══════════════════════════════════════════════════════════
-
-  function syncIcon() {
-    return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;flex:0 0 auto">' +
-      '<path d="M21.5 2v6h-6"/>' +
-      '<path d="M2.5 22v-6h6"/>' +
-      '<path d="M21.34 15.57a10 10 0 0 1-17.08 3.58"/>' +
-      '<path d="M2.66 8.43a10 10 0 0 1 17.08-3.58"/>' +
-      '</svg>';
+  }
+  async function ensureUnlocked(){
+    if (!isSaveOnlineProtected() || isSaveOnlineUnlocked()) return true;
+    return await passwordModal();
   }
 
-  function cloudIcon() {
-    return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;flex:0 0 auto">' +
-      '<path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/>' +
-      '<path d="M12 12v9"/>' +
-      '<path d="m8 17 4-4 4 4"/>' +
-      '</svg>';
-  }
-
-  function statusDot(color) {
-    return '<span style="width:8px;height:8px;border-radius:50%;background:' + color + ';display:inline-block;flex-shrink:0"></span>';
-  }
-
-  function buttonStyle(primary) {
-    return 'border:' + (primary ? '0' : '1px solid #cbd5e1') + ';' +
-      'background:' + (primary ? 'linear-gradient(135deg,#0ea5e9,#0f766e)' : 'white') + ';' +
-      'color:' + (primary ? 'white' : '#334155') + ';' +
-      'border-radius:10px;padding:9px 12px;font-weight:900;font-size:12px;cursor:pointer;' +
-      'box-shadow:0 1px 3px rgba(15,23,42,.08);transition:all .15s';
-  }
-
-  /**
-   * Remplace les boutons Google Drive / Google Sheets / Sync du sidebar
-   * par un seul bouton "☁️ Synchronisation"
-   */
-  function getAside() { return document.querySelector('aside') || null; }
-
-  function allSidebarButtons() {
+  function getAside(){ return document.querySelector('aside') || null; }
+  function allSidebarButtons(){
     var aside = getAside();
     return aside ? Array.prototype.slice.call(aside.querySelectorAll('button')) : [];
   }
-
-  function findOriginalButtons() {
+  function findOriginalButtons(){
     var buttons = allSidebarButtons();
-    function find(re) {
-      return buttons.find(function (b) { return re.test((b.textContent || '').replace(/\s+/g, ' ').trim()); }) || null;
-    }
+    var find = function(re){ return buttons.find(function(b){ return re.test(norm(b.textContent)); }) || null; };
     return {
-      drive: find(/Google\s*Drive/i),
+      drive: find(/Google\s*Drive\s*API/i),
       sheets: find(/Google\s*Sheets/i),
       sync: find(/^Synchroniser$|Synchroniser/i),
-      settings: find(/Paramètres/i),
-      export: find(/Export/i),
-      data: find(/Données|Gestion des données/i)
+      settings: find(/Paramètres/i)
     };
   }
-
-  function hideGoogleButtons() {
-    var targets = findOriginalButtons();
-    ['drive', 'sheets', 'sync'].forEach(function (k) {
+  function hideOriginals(targets){
+    ['drive','sheets','sync'].forEach(function(k){
       var b = targets[k];
       if (!b) return;
-      // Masquer le bouton Google existant
-      b.dataset.gasHidden = '1';
+      b.dataset.saveOnlineHidden = '1';
       b.style.display = 'none';
-
-      // Masquer aussi le parent si c'est un wrapper
-      var parent = b.closest('[data-save-online-hidden]');
-      if (!parent) {
-        b.setAttribute('data-save-online-hidden', '1');
-      }
     });
-
-    // Supprimer aussi les boutons du module "Save Online" existant
-    var existingSaveOnline = document.getElementById('fm-save-online-main-button');
-    if (existingSaveOnline) existingSaveOnline.remove();
   }
-
-  var menuInstalled = false;
-
-  function installSyncButton() {
-    if (menuInstalled) return;
-
-    var aside = getAside();
-    if (!aside) return;
-
-    var targets = findOriginalButtons();
-    var reference = targets.drive || targets.sheets || targets.sync || targets.export;
-    if (!reference) return;
-
-    hideGoogleButtons();
-
-    var existing = document.getElementById('fm-gas-sync-button');
-    if (existing && aside.contains(existing)) {
-      menuInstalled = true;
-      return;
-    }
-    if (existing) {
-      try { existing.remove(); } catch (e) { /* ignore */ }
-    }
-
-    var settings = loadSettings();
-    var statusColor = settings.enabled ? (navigator.onLine ? '#22c55e' : '#f59e0b') : '#94a3b8';
-
+  function saveOnlineIcon(){
+    return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;flex:0 0 auto"><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/><path d="M7 9a5 5 0 0 1 9.7-1.7A4 4 0 1 1 17 15H8a4 4 0 1 1-.7-7.9"/><path d="M12 12v-8"/><path d="M8 8l4-4 4 4"/></svg>';
+  }
+  function makeButton(reference){
     var btn = document.createElement('button');
     btn.type = 'button';
-    btn.id = 'fm-gas-sync-button';
-    if (reference.className) btn.className = reference.className;
+    btn.id = 'fm-save-online-main-button';
+    if (reference && reference.className) btn.className = reference.className;
     btn.style.cssText += ';display:flex!important;align-items:center;gap:10px;width:100%;border-radius:12px;margin:2px 0;';
-    btn.innerHTML = cloudIcon() +
-      '<span style="font-weight:700">Synchronisation</span>' +
-      statusDot(statusColor);
-
-    btn.onclick = function (ev) {
-      ev.preventDefault();
-      ev.stopPropagation();
-      openSyncModal();
-    };
-
-    reference.parentNode.insertBefore(btn, reference);
-    menuInstalled = true;
+    btn.innerHTML = saveOnlineIcon() + '<span style="font-weight:700">Save en ligne</span>';
+    btn.onclick = async function(ev){ ev.preventDefault(); ev.stopPropagation(); if (await ensureUnlocked()) openModal(); };
+    return btn;
+  }
+  function ensureMenu(){
+    if (syncing) return;
+    syncing = true;
+    try {
+      var aside = getAside();
+      if (!aside) return;
+      var targets = findOriginalButtons();
+      var first = targets.drive || targets.sheets || targets.sync;
+      if (!first) return;
+      hideOriginals(targets);
+      var existing = document.getElementById('fm-save-online-main-button');
+      if (existing && aside.contains(existing)) return;
+      if (existing) { try { existing.remove(); } catch(e){} }
+      var btn = makeButton(first);
+      first.parentNode.insertBefore(btn, first);
+    } finally { syncing = false; }
   }
 
-  // ═══════════════════════════════════════════════════════════
-  //  MODAL DE SYNCHRONISATION
-  // ═══════════════════════════════════════════════════════════
-
-  function closeModal() {
-    var m = document.getElementById('fm-gas-modal');
-    if (m) m.remove();
+  function notify(msg, type){
+    var el = document.createElement('div');
+    el.textContent = msg;
+    el.style.cssText = 'position:fixed;right:18px;bottom:18px;z-index:2147483647;padding:12px 14px;border-radius:12px;color:white;font:700 12px system-ui,-apple-system,Segoe UI,sans-serif;box-shadow:0 12px 30px rgba(15,23,42,.25);max-width:360px;background:' + (type === 'error' ? 'linear-gradient(135deg,#ef4444,#b91c1c)' : 'linear-gradient(135deg,#0ea5e9,#0f766e)');
+    document.body.appendChild(el);
+    setTimeout(function(){ el.remove(); }, type === 'error' ? 4500 : 2500);
   }
-
-  function openSyncModal() {
-    var settings = loadSettings();
-    var s = settings;
-    var isConfigured = GAS_URL && GAS_URL !== 'VOTRE_URL_WEB_APP_GOOGLE_APPS_SCRIPT';
-    var isEnabled = s.enabled && isConfigured;
-    var lastSaved = s.lastSavedAt ? new Date(s.lastSavedAt).toLocaleString('fr-FR') : '—';
-    var lastSync = lastSyncTimestamp ? new Date(lastSyncTimestamp).toLocaleString('fr-FR') : '—';
-    var statusColor = isEnabled ? (navigator.onLine ? '#22c55e' : '#f59e0b') : '#94a3b8';
-    var statusText = isEnabled
-      ? (navigator.onLine ? 'Connecté et actif' : 'Hors-ligne — en attente de connexion')
-      : 'Non configuré';
-
+  function closeModal(){ var m = document.getElementById('fm-save-online-modal'); if (m) m.remove(); }
+  async function goTo(key){
     closeModal();
+    if (!(await ensureUnlocked())) return;
+    setTimeout(function(){
+      var targets = findOriginalButtons();
+      var target = targets[key];
+      if (target) target.click();
+      else alert('Bouton introuvable. Rechargez la page puis réessayez.');
+    }, 40);
+  }
+  function clickButtonByText(re, root){
+    var buttons = Array.prototype.slice.call((root || document).querySelectorAll('button'));
+    var b = buttons.find(function(x){ return re.test(norm(x.textContent)); });
+    if (b) { b.click(); return true; }
+    return false;
+  }
+  async function openProvider(providerId){
+    closeModal();
+    if (!(await ensureUnlocked())) return;
+    var meta = providerMeta.find(function(p){ return p.id === providerId; });
+    if (!meta) return;
+    var targets = findOriginalButtons();
+    if (!targets.settings) { notify('Paramètres introuvable dans le menu.', 'error'); return; }
+    targets.settings.click();
+    var settingsReady = await waitFor(function(){ return Array.prototype.slice.call(document.querySelectorAll('h1')).some(function(h){ return /Paramètres/.test(h.textContent || ''); }); }, 4000);
+    if (!settingsReady) { notify('Impossible d’ouvrir Paramètres.', 'error'); return; }
+    clickButtonByText(/Cloud\s*\/\s*Firebase|Cloud/i);
+    var cloudReady = await waitFor(function(){ return Array.prototype.slice.call(document.querySelectorAll('h3')).some(function(h){ return /Synchronisation\s+Cloud/i.test(h.textContent || ''); }); }, 4000);
+    if (!cloudReady) { notify('Impossible d’ouvrir Synchronisation Cloud.', 'error'); return; }
+    var label = meta.label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    var ok = clickButtonByText(new RegExp(label, 'i'));
+    if (!ok && providerId === 'custom') ok = clickButtonByText(/API\s+REST/i);
+    notify(ok ? ('✅ Fournisseur ouvert : ' + meta.label) : ('⚠️ Fournisseur non trouvé : ' + meta.label), ok ? 'success' : 'error');
+  }
 
+
+  function loadAppState(){
+    try { return JSON.parse(localStorage.getItem(STATE_KEY) || '{}'); }
+    catch(e){ return {}; }
+  }
+  function saveAppState(state){
+    localStorage.setItem(STATE_KEY, JSON.stringify(state || {}));
+  }
+  function providerDefaultConfig(providerId){
+    var spec = providerFields[providerId];
+    var out = {};
+    if (!spec) return out;
+    spec.fields.forEach(function(f){ out[f[0]] = f[2] || ''; });
+    return out;
+  }
+  function getProviderConfig(providerId){
+    var state = loadAppState();
+    var cloud = (state.app && state.app.cloud) || {};
+    var spec = providerFields[providerId];
+    var key = spec && spec.storageKey || providerId;
+    return Object.assign({}, providerDefaultConfig(providerId), cloud[key] || {});
+  }
+  function setProviderConfig(providerId, cfg, activate){
+    var state = loadAppState();
+    state.app = state.app || {};
+    var cloud = Object.assign({}, state.app.cloud || {});
+    var spec = providerFields[providerId];
+    var key = spec && spec.storageKey || providerId;
+    cloud[key] = Object.assign({}, cfg || {});
+    cloud.provider = providerId;
+    if (activate) cloud.enabled = true;
+    state.app.cloud = cloud;
+    saveAppState(state);
+  }
+  function inputStyle(){ return 'width:100%;box-sizing:border-box;border:1px solid #cbd5e1;border-radius:11px;padding:10px 11px;font-size:12px;outline:none;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;background:white;color:#0f172a'; }
+  function buttonCss(primary){ return 'border:'+(primary?'0':'1px solid #cbd5e1')+';background:'+(primary?'linear-gradient(135deg,#0ea5e9,#0f766e)':'white')+';color:'+(primary?'white':'#334155')+';border-radius:10px;padding:9px 12px;font-weight:900;font-size:12px;cursor:pointer'; }
+  function providerFormFields(providerId){
+    var spec = providerFields[providerId], cfg = getProviderConfig(providerId);
+    if (!spec) return '';
+    return spec.fields.map(function(f){
+      var k=f[0], label=f[1], ph=f[2]||'';
+      var val = cfg[k] == null ? '' : String(cfg[k]);
+      return '<div><label style="display:block;font-size:11px;font-weight:800;color:#475569;margin-bottom:5px">'+esc(label)+'</label><input data-field="'+esc(k)+'" value="'+esc(val)+'" placeholder="'+esc(ph)+'" style="'+inputStyle()+'"></div>';
+    }).join('');
+  }
+  function collectProviderForm(modal){
+    var cfg = {};
+    Array.prototype.slice.call(modal.querySelectorAll('[data-field]')).forEach(function(inp){ cfg[inp.getAttribute('data-field')] = inp.value.trim(); });
+    return cfg;
+  }
+  function validateProviderConfig(providerId, cfg){
+    var spec = providerFields[providerId];
+    if (!spec) return 'Fournisseur inconnu';
+    var missing = [];
+    spec.fields.forEach(function(f){ if (/\*/.test(f[1]) && !cfg[f[0]]) missing.push(f[1].replace('*','').trim()); });
+    return missing.length ? ('Champs obligatoires manquants : ' + missing.join(', ')) : '';
+  }
+  async function openProviderPage(providerId){
+    if (!(await ensureUnlocked())) return;
+    var meta = providerMeta.find(function(p){ return p.id === providerId; });
+    var spec = providerFields[providerId];
+    if (!meta || !spec) return;
+    closeModal();
     var overlay = document.createElement('div');
-    overlay.id = 'fm-gas-modal';
+    overlay.id = 'fm-save-online-modal';
     overlay.style.cssText = 'position:fixed;inset:0;background:rgba(15,23,42,.48);z-index:2147483646;display:flex;align-items:center;justify-content:center;padding:18px;font-family:system-ui,-apple-system,Segoe UI,sans-serif';
-
-    overlay.innerHTML =
-      '<div role="dialog" aria-modal="true" style="width:min(620px,96vw);max-height:90vh;overflow:auto;background:#f8fafc;border-radius:22px;box-shadow:0 25px 80px rgba(15,23,42,.35);border:1px solid rgba(255,255,255,.7)">' +
-
-      // ── En-tête ──
+    overlay.innerHTML = '<div role="dialog" aria-modal="true" style="width:min(720px,96vw);max-height:92vh;overflow:auto;background:#f8fafc;border-radius:22px;box-shadow:0 25px 80px rgba(15,23,42,.35);border:1px solid rgba(255,255,255,.7)">' +
       '<div style="padding:18px 20px;border-bottom:1px solid #e2e8f0;background:linear-gradient(135deg,#0ea5e9,#0f766e);color:white;border-radius:22px 22px 0 0;display:flex;align-items:flex-start;gap:12px;justify-content:space-between">' +
-        '<div><div style="font-size:20px;font-weight:900">☁️ Synchronisation Cloud</div>' +
-        '<div style="font-size:12px;opacity:.9;margin-top:3px">Synchronisez vos factures entre tous vos appareils en temps réel — sans cookies, sans OAuth.</div></div>' +
+        '<div><div style="font-size:20px;font-weight:900">'+meta.emoji+' Configuration '+esc(meta.label)+'</div><div style="font-size:12px;opacity:.9;margin-top:3px">Page individuelle dans Save en ligne — même principe que Google Drive API et Google Sheets.</div></div>' +
         '<button type="button" data-close="1" style="border:0;background:rgba(255,255,255,.18);color:white;border-radius:10px;width:34px;height:34px;cursor:pointer;font-size:20px">×</button>' +
       '</div>' +
-
-      // ── Statut ──
-      '<div style="padding:16px;display:grid;gap:12px">' +
-
-        '<div style="display:flex;align-items:center;gap:12px;padding:14px;border:1px solid ' + (isEnabled ? '#bbf7d0' : '#e2e8f0') + ';border-radius:14px;background:' + (isEnabled ? '#f0fdf4' : 'white') + '">' +
-          statusDot(statusColor) +
-          '<div style="flex:1">' +
-            '<div style="font-weight:800;font-size:14px;color:#0f172a">' + esc(statusText) + '</div>' +
-            '<div style="font-size:11px;color:#64748b;margin-top:2px">' +
-              'Dernière sauvegarde : ' + esc(lastSaved) + ' · Dernière synchro : ' + esc(lastSync) +
-            '</div>' +
-          '</div>' +
-          '<span style="font-size:11px;font-weight:800;border-radius:999px;padding:5px 9px;background:' + (isEnabled ? '#dcfce7;color:#166534;border:1px solid #bbf7d0' : '#f1f5f9;color:#475569;border:1px solid #e2e8f0') + '">' +
-            (isEnabled ? '✓ Actif' : 'Inactif') +
-          '</span>' +
-        '</div>' +
-
-        // ── Configuration URL ──
-        '<div style="padding:14px;border:1px solid #e2e8f0;border-radius:14px;background:white">' +
-          '<div style="font-weight:800;font-size:13px;color:#0f172a;margin-bottom:8px">🔧 Configuration de l\'API</div>' +
-          '<div style="display:grid;gap:8px">' +
-            '<div>' +
-              '<label style="display:block;font-size:11px;font-weight:700;color:#475569;margin-bottom:4px">URL Google Apps Script (Web App)</label>' +
-              '<input id="fm-gas-url" value="' + esc(GAS_URL) + '" placeholder="https://script.google.com/macros/s/.../exec" ' +
-                'style="width:100%;box-sizing:border-box;border:1px solid #cbd5e1;border-radius:10px;padding:9px 10px;font-size:11px;font-family:monospace;outline:none;color:#0f172a;background:' + (isConfigured ? '#f8fafc' : '#fffbeb') + '">' +
-            '</div>' +
-            '<div>' +
-              '<label style="display:block;font-size:11px;font-weight:700;color:#475569;margin-bottom:4px">Clé API (optionnel)</label>' +
-              '<input id="fm-gas-key" value="' + esc(API_KEY) + '" placeholder="Laisser vide si non configuré" ' +
-                'style="width:100%;box-sizing:border-box;border:1px solid #cbd5e1;border-radius:10px;padding:9px 10px;font-size:11px;font-family:monospace;outline:none;color:#0f172a">' +
-            '</div>' +
-            '<div>' +
-              '<label style="display:block;font-size:11px;font-weight:700;color:#475569;margin-bottom:4px">Intervalle de synchronisation (secondes)</label>' +
-              '<input id="fm-gas-interval" type="number" value="' + (s.syncInterval || SYNC_INTERVAL) + '" min="10" max="300" ' +
-                'style="width:100%;box-sizing:border-box;border:1px solid #cbd5e1;border-radius:10px;padding:9px 10px;font-size:11px;outline:none;color:#0f172a">' +
-            '</div>' +
-          '</div>' +
-        '</div>' +
-
-        // ── Actions ──
-        '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px">' +
-          '<button type="button" data-action="toggle" style="' + buttonStyle(isEnabled) + '">' +
-            (isEnabled ? '⏸️ Désactiver la synchro' : '▶️ Activer la synchronisation') +
-          '</button>' +
-          '<button type="button" data-action="save" style="' + buttonStyle(false) + '" ' + (!isEnabled ? 'disabled style="opacity:.5;cursor:not-allowed;pointer-events:none"' : '') + '>' +
-            '💾 Sauvegarder maintenant' +
-          '</button>' +
-          '<button type="button" data-action="load" style="' + buttonStyle(false) + '" ' + (!isEnabled ? 'disabled style="opacity:.5;cursor:not-allowed;pointer-events:none"' : '') + '>' +
-            '📥 Charger depuis le cloud' +
-          '</button>' +
-          '<button type="button" data-action="push" style="' + buttonStyle(false) + '" ' + (!isEnabled ? 'disabled style="opacity:.5;cursor:not-allowed;pointer-events:none"' : '') + '>' +
-            '📤 Envoyer les données locales' +
-          '</button>' +
-        '</div>' +
-
-        // ── Message d'information ──
-        '<div style="padding:12px;border:1px solid #bae6fd;background:#eff6ff;border-radius:13px;color:#075985;font-size:12px;line-height:1.5">' +
-          '<strong>🔒 Sécurité garantie :</strong> Aucun cookie tiers, aucun OAuth, aucun SDK Google n\'est utilisé. ' +
-          'Les données transitent uniquement via des requêtes <code>fetch()</code> standards en JSON. ' +
-          'La synchronisation fonctionne sur <strong>tous les navigateurs et appareils</strong> sans restriction SameSite.' +
-        '</div>' +
-
-        // ── Message d'erreur ──
-        (s.lastError ?
-          '<div style="padding:10px;border:1px solid #fecaca;background:#fef2f2;color:#991b1b;border-radius:11px;font-size:12px;font-weight:700">❌ Dernière erreur : ' + esc(s.lastError) + '</div>'
-          : '') +
-
-        // ── Message dynamique ──
-        '<div id="fm-gas-msg" style="display:none;padding:10px;border-radius:11px;font-size:12px;font-weight:700"></div>' +
-
+      '<div style="padding:16px;display:grid;gap:14px">' +
+        '<div style="padding:12px;border:1px solid #bae6fd;background:#eff6ff;border-radius:13px;color:#075985;font-size:12px;line-height:1.45"><strong>💡 Information</strong><br>'+esc(spec.note)+'</div>' +
+        '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px">'+providerFormFields(providerId)+'</div>' +
+        '<div data-msg style="display:none;padding:10px;border-radius:11px;font-size:12px;font-weight:800"></div>' +
       '</div>' +
-
-      // ── Pied de page ──
-      '<div style="padding:12px 16px;border-top:1px solid #e2e8f0;color:#64748b;font-size:11px;line-height:1.45;background:white;border-radius:0 0 22px 22px;display:flex;justify-content:space-between;align-items:center">' +
-        '<span>FactureMA v2 — Architecture REST sans cookies</span>' +
-        '<button type="button" data-action="saveConfig" style="' + buttonStyle(true) + '">💾 Enregistrer la configuration</button>' +
+      '<div style="display:flex;gap:8px;justify-content:space-between;flex-wrap:wrap;padding:12px 16px;border-top:1px solid #e2e8f0;background:white;border-radius:0 0 22px 22px">' +
+        '<div style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" data-back style="'+buttonCss(false)+'">← Retour Save en ligne</button><button type="button" data-open-settings style="'+buttonCss(false)+'">⚙️ Ouvrir aussi dans Paramètres Cloud</button></div>' +
+        '<div style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" data-save style="'+buttonCss(false)+'">💾 Enregistrer</button><button type="button" data-activate style="'+buttonCss(true)+'">✅ Enregistrer & activer</button></div>' +
       '</div>' +
-
       '</div>';
-
-    // ── Gestion des événements du modal ──
-    overlay.addEventListener('click', async function (e) {
-      // Fermer le modal
-      if (e.target === overlay || e.target.closest('[data-close]')) {
-        closeModal();
-        return;
-      }
-
-      var actionBtn = e.target.closest('[data-action]');
-      if (!actionBtn) return;
-
-      var action = actionBtn.getAttribute('data-action');
-
-      if (action === 'toggle') {
-        var currentConfigured = document.getElementById('fm-gas-url').value.trim();
-        if (currentConfigured && currentConfigured !== 'VOTRE_URL_WEB_APP_GOOGLE_APPS_SCRIPT') {
-          var newEnabled = !loadSettings().enabled;
-          saveSettings({ enabled: newEnabled });
-
-          if (newEnabled) {
-            GAS_URL = currentConfigured;
-            API_KEY = document.getElementById('fm-gas-key').value.trim();
-            startAutoSync();
-            await loadFromGas();
-          } else {
-            stopAutoSync();
-          }
-
-          closeModal();
-          setTimeout(function () { openSyncModal(); }, 200);
-        } else {
-          showMsg('⚠️ Configurez d\'abord l\'URL du script GAS.', false);
-        }
-      }
-
-      if (action === 'save') {
-        await forceSaveNow();
-      }
-
-      if (action === 'load') {
-        try {
-          notify('⏳ Chargement depuis le cloud...', 'success');
-          await loadFromGas();
-          showMsg('✅ Données chargées avec succès', true);
-          setTimeout(function () { location.reload(); }, 1000);
-        } catch (err) {
-          showMsg('❌ ' + (err.message || err), false);
-        }
-      }
-
-      if (action === 'push') {
-        try {
-          notify('⏳ Envoi des données locales vers le cloud...', 'success');
-          isSaving = true;
-          var stateJson = localStorage.getItem(STATE_KEY);
-          var state = JSON.parse(stateJson || '{}');
-          state._lastModified = new Date().toISOString();
-          state._timestamp = Date.now();
-          await gasPost({ action: 'saveState', state: state });
-          lastSavedHash = hashCode(JSON.stringify(state));
-          saveSettings({ lastSavedAt: new Date().toISOString(), lastError: '' });
-          showMsg('✅ Données envoyées avec succès', true);
-          notify('✅ Données locales envoyées vers le cloud', 'success');
-          isSaving = false;
-        } catch (err) {
-          isSaving = false;
-          showMsg('❌ ' + (err.message || err), false);
-          notify('❌ Erreur : ' + (err.message || err), 'error');
-        }
-      }
-
-      if (action === 'saveConfig') {
-        var newUrl = document.getElementById('fm-gas-url').value.trim();
-        var newKey = document.getElementById('fm-gas-key').value.trim();
-        var newInterval = parseInt(document.getElementById('fm-gas-interval').value, 10) || SYNC_INTERVAL;
-
-        GAS_URL = newUrl;
-        API_KEY = newKey;
-
-        saveSettings({
-          gasUrl: newUrl,
-          apiKey: newKey,
-          syncInterval: Math.max(10, Math.min(300, newInterval))
-        });
-
-        showMsg('✅ Configuration enregistrée', true);
-        notify('✅ Configuration sauvegardée', 'success');
-
-        // Redémarrer la synchro si activée
-        if (loadSettings().enabled) {
-          stopAutoSync();
-          startAutoSync();
-        }
-
-        setTimeout(function () {
-          closeModal();
-          openSyncModal();
-        }, 600);
-      }
-    });
-
-    document.body.appendChild(overlay);
-
-    function showMsg(txt, ok) {
-      var msg = document.getElementById('fm-gas-msg');
-      if (!msg) return;
+    function showMsg(txt, ok){
+      var msg = overlay.querySelector('[data-msg]');
       msg.style.display = 'block';
       msg.style.border = '1px solid ' + (ok ? '#bbf7d0' : '#fecaca');
       msg.style.background = ok ? '#f0fdf4' : '#fef2f2';
       msg.style.color = ok ? '#166534' : '#991b1b';
       msg.textContent = txt;
     }
-  }
-
-  // ═══════════════════════════════════════════════════════════
-  //  PANNEAU DANS PARAMÈTRES
-  // ═══════════════════════════════════════════════════════════
-
-  var settingsPanelBusy = false;
-
-  function isSettingsPage() {
-    var h1 = Array.prototype.slice.call(document.querySelectorAll('h1'));
-    return h1.some(function (h) { return /Paramètres/.test(h.textContent || ''); });
-  }
-
-  function findSettingsHeader() {
-    return Array.prototype.slice.call(document.querySelectorAll('h3')).find(function (h) {
-      return /Cloud|Firebase|Synchronisation/i.test(h.textContent || '');
-    }) || null;
-  }
-
-  function renderSettingsPanel() {
-    if (settingsPanelBusy) return;
-
-    if (!isSettingsPage()) {
-      var oldPanel = document.getElementById('fm-gas-settings-panel');
-      if (oldPanel) oldPanel.remove();
-      return;
-    }
-
-    var header = findSettingsHeader();
-    if (!header) return;
-
-    var card = header.closest('div[class*="p-5"]') || header.parentElement;
-    var parent = card && card.parentElement;
-    if (!parent) return;
-
-    var existing = document.getElementById('fm-gas-settings-panel');
-    if (existing && parent.contains(existing)) return;
-
-    settingsPanelBusy = true;
-    try {
-      var settings = loadSettings();
-      var isConfigured = GAS_URL && GAS_URL !== 'VOTRE_URL_WEB_APP_GOOGLE_APPS_SCRIPT';
-      var isEnabled = settings.enabled && isConfigured;
-
-      var panel = document.createElement('section');
-      panel.id = 'fm-gas-settings-panel';
-      panel.style.cssText = 'background:white;border:2px solid rgba(14,165,233,.32);border-radius:16px;padding:16px;box-shadow:0 8px 22px rgba(15,23,42,.06);font-family:system-ui,-apple-system,Segoe UI,sans-serif;margin-top:14px';
-
-      panel.innerHTML =
-        '<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap">' +
-          '<div>' +
-            '<h3 style="margin:0;color:#1e293b;font-size:16px;font-weight:900">☁️ Synchronisation REST (Google Apps Script)</h3>' +
-            '<p style="margin:4px 0 0;color:#64748b;font-size:12px;line-height:1.45">Architecture API REST sans cookies ni OAuth. Synchronisez vos données entre tous vos appareils en temps réel.</p>' +
-          '</div>' +
-          '<span style="font-size:11px;font-weight:800;border-radius:999px;padding:5px 9px;background:' + (isEnabled ? '#dcfce7;color:#166534;border:1px solid #bbf7d0' : '#f1f5f9;color:#475569;border:1px solid #e2e8f0') + '">' + (isEnabled ? '✓ Actif' : 'Non configuré') + '</span>' +
-        '</div>' +
-
-        '<div style="margin-top:12px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px">' +
-          '<div style="padding:10px;border:1px solid #e2e8f0;border-radius:10px;background:#f8fafc">' +
-            '<div style="font-size:10px;color:#64748b;text-transform:uppercase;font-weight:800">Dernière sauvegarde</div>' +
-            '<div style="font-size:12px;color:#0f172a;font-weight:700;margin-top:2px">' + (settings.lastSavedAt ? new Date(settings.lastSavedAt).toLocaleString('fr-FR') : '—') + '</div>' +
-          '</div>' +
-          '<div style="padding:10px;border:1px solid #e2e8f0;border-radius:10px;background:#f8fafc">' +
-            '<div style="font-size:10px;color:#64748b;text-transform:uppercase;font-weight:800">Intervalle synchro</div>' +
-            '<div style="font-size:12px;color:#0f172a;font-weight:700;margin-top:2px">' + (settings.syncInterval || SYNC_INTERVAL) + ' secondes</div>' +
-          '</div>' +
-          '<div style="padding:10px;border:1px solid #e2e8f0;border-radius:10px;background:#f8fafc">' +
-            '<div style="font-size:10px;color:#64748b;text-transform:uppercase;font-weight:800">Mode</div>' +
-            '<div style="font-size:12px;color:#0f172a;font-weight:700;margin-top:2px">REST fetch() sans cookies</div>' +
-          '</div>' +
-        '</div>' +
-
-        '<div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">' +
-          '<button type="button" id="fm-gas-settings-open" style="' + buttonStyle(true) + '">☁️ Ouvrir le panneau de synchronisation</button>' +
-          '<button type="button" id="fm-gas-settings-force" style="' + buttonStyle(false) + '">💾 Sauvegarder maintenant</button>' +
-        '</div>' +
-
-        '<div style="margin-top:10px;font-size:11px;color:#64748b;line-height:1.45">' +
-          '🔧 <strong>URL :</strong> <code style="font-size:10px;background:#f1f5f9;padding:2px 4px;border-radius:4px">' + esc(GAS_URL && GAS_URL !== 'VOTRE_URL_WEB_APP_GOOGLE_APPS_SCRIPT' ? GAS_URL : 'Non configurée') + '</code>' +
-        '</div>';
-
-      if (!existing) {
-        card.parentElement.insertBefore(panel, card.nextSibling);
+    overlay.addEventListener('click', function(e){
+      if (e.target === overlay || e.target.closest('[data-close]')) closeModal();
+      if (e.target.closest('[data-back]')) openModal();
+      if (e.target.closest('[data-open-settings]')) openProvider(providerId);
+      if (e.target.closest('[data-save]') || e.target.closest('[data-activate]')) {
+        var activate = !!e.target.closest('[data-activate]');
+        var cfg = collectProviderForm(overlay);
+        var err = validateProviderConfig(providerId, cfg);
+        if (err) { showMsg('❌ ' + err, false); return; }
+        setProviderConfig(providerId, cfg, activate);
+        showMsg(activate ? '✅ Configuration enregistrée et fournisseur activé. Rechargement...' : '✅ Configuration enregistrée. Rechargement...', true);
+        notify('✅ Configuration ' + meta.label + ' enregistrée', 'success');
+        setTimeout(function(){ location.reload(); }, 850);
       }
-
-      panel.querySelector('#fm-gas-settings-open').onclick = function () {
-        openSyncModal();
-      };
-      panel.querySelector('#fm-gas-settings-force').onclick = function () {
-        forceSaveNow();
-      };
-
-    } finally {
-      settingsPanelBusy = false;
-    }
-  }
-
-  function refreshPanels() {
-    renderSettingsPanel();
-    // Mettre à jour le statut du bouton dans le sidebar
-    var btn = document.getElementById('fm-gas-sync-button');
-    if (btn) {
-      var settings = loadSettings();
-      var statusColor = settings.enabled ? (navigator.onLine ? '#22c55e' : '#f59e0b') : '#94a3b8';
-      // Mettre à jour le point de statut
-      var dots = btn.querySelectorAll('span');
-      if (dots.length > 0) {
-        dots[dots.length - 1].style.background = statusColor;
-      }
-    }
-  }
-
-  // ═══════════════════════════════════════════════════════════
-  //  INITIALISATION AUTOMATIQUE
-  // ═══════════════════════════════════════════════════════════
-
-  /**
-   * Initialisation principale — exécutée au chargement de la page
-   *
-   * 1. Hook localStorage pour détecter les changements
-   * 2. Masquer les boutons Google OAuth
-   * 3. Installer le bouton de synchronisation
-   * 4. Charger les données depuis GAS (si configuré)
-   * 5. Démarrer la synchronisation automatique
-   */
-  async function init() {
-    console.log('[FactureMA GAS] Initialisation du module de synchronisation...');
-
-    // ── 1. Hooker localStorage ──
-    hookLocalStorage();
-
-    // ── 2. Charger la configuration sauvegardée ──
-    var savedSettings = loadSettings();
-    if (savedSettings.gasUrl) GAS_URL = savedSettings.gasUrl;
-    if (savedSettings.apiKey) API_KEY = savedSettings.apiKey;
-
-    // ── 3. Masquer les boutons Google ──
-    hideGoogleButtons();
-
-    // ── 4. Installer le bouton de synchronisation dans le sidebar ──
-    installSyncButton();
-
-    // ── 5. Installer le panneau dans Paramètres ──
-    renderSettingsPanel();
-
-    // ── 6. Charger les données depuis GAS si configuré ──
-    if (savedSettings.enabled && GAS_URL && GAS_URL !== 'VOTRE_URL_WEB_APP_GOOGLE_APPS_SCRIPT') {
-      // Attendre que l'application React soit montée
-      await sleep(1500);
-      await loadFromGas();
-
-      // ── 7. Démarrer la synchronisation automatique ──
-      startAutoSync();
-    }
-
-    console.log('[FactureMA GAS] Module prêt — URL:', GAS_URL === 'VOTRE_URL_WEB_APP_GOOGLE_APPS_SCRIPT' ? 'non configurée' : 'configurée');
-  }
-
-  // ═══════════════════════════════════════════════════════════
-  //  OBSERVATEUR DE MUTATIONS (pour le sidebar et les paramètres)
-  // ═══════════════════════════════════════════════════════════
-
-  var observer = new MutationObserver(function () {
-    installSyncButton();
-    renderSettingsPanel();
-    hideGoogleButtons();
-  });
-
-  function startObserver() {
-    if (document.body) {
-      observer.observe(document.body, { childList: true, subtree: true });
-    }
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function () {
-      init();
-      startObserver();
     });
-  } else {
-    init();
-    startObserver();
+    document.body.appendChild(overlay);
   }
 
-  // ═══════════════════════════════════════════════════════════
-  //  API PUBLIQUE (accessible depuis la console ou d'autres scripts)
-  // ═══════════════════════════════════════════════════════════
+  function card(label, desc, emoji, key, provider){
+    var attr = provider ? 'data-provider="'+esc(key)+'"' : 'data-go="'+esc(key)+'"';
+    return '<button type="button" '+attr+' style="width:100%;display:flex;gap:12px;align-items:flex-start;text-align:left;padding:14px;border:1px solid #dbeafe;background:#fff;border-radius:14px;cursor:pointer;box-shadow:0 1px 2px rgba(15,23,42,.05)">' +
+      '<span style="font-size:25px;line-height:1">'+emoji+'</span>' +
+      '<span style="flex:1"><span style="display:block;font-weight:850;color:#0f172a;font-size:14px">'+esc(label)+'</span>' +
+      '<span style="display:block;color:#64748b;font-size:12px;line-height:1.4;margin-top:3px">'+esc(desc)+'</span></span>' +
+      '<span style="color:#0ea5e9;font-weight:900">›</span>' +
+      '</button>';
+  }
 
-  window.FactureMAGasSync = {
-    // Lecture
-    loadFromGas: loadFromGas,
-    getSettings: loadSettings,
+  function openModal(){
+    var s = load();
+    var items = [];
+    if (s.drive) items.push(card('Configuration Google Drive API', 'Sauvegarder les opérations et les fichiers PDF dans Google Drive via Apps Script.', '📁', 'drive'));
+    if (s.sheets) items.push(card('Configuration Google Sheets', 'Envoyer / journaliser les opérations dans une feuille Google Sheets.', '📊', 'sheets'));
+    if (s.sync) items.push(card('Synchronisation client', 'Connecter un autre appareil avec Gmail et récupérer/remplir la configuration en ligne.', '🔄', 'sync'));
+    providerMeta.forEach(function(p){ if (s.providers && s.providers[p.id]) items.push(card('Configuration ' + p.label, p.desc, p.emoji, p.id, true)); });
+    if (!items.length) items.push('<div style="padding:14px;border:1px solid #fde68a;background:#fffbeb;border-radius:14px;color:#92400e;font-size:13px">Aucune fonction sélectionnée. Allez dans <strong>Paramètres → ☁️ Cloud / Firebase</strong> puis activez au moins une fonction pour le bouton <strong>Save en ligne</strong>.</div>');
 
-    // Écriture
-    saveToGas: forceSaveNow,
-    saveSettings: saveSettings,
-    saveInvoiceToGas: saveInvoiceToGas,
-    deleteInvoiceFromGas: deleteInvoiceFromGas,
-    saveClientToGas: saveClientToGas,
-    saveArticleToGas: saveArticleToGas,
+    closeModal();
+    var overlay = document.createElement('div');
+    overlay.id = 'fm-save-online-modal';
+    overlay.style.cssText = 'position:fixed;inset:0;background:rgba(15,23,42,.48);z-index:2147483646;display:flex;align-items:center;justify-content:center;padding:18px;font-family:system-ui,-apple-system,Segoe UI,sans-serif';
+    overlay.innerHTML = '<div role="dialog" aria-modal="true" style="width:min(620px,96vw);max-height:90vh;overflow:auto;background:#f8fafc;border-radius:22px;box-shadow:0 25px 80px rgba(15,23,42,.35);border:1px solid rgba(255,255,255,.7)">' +
+      '<div style="padding:18px 20px;border-bottom:1px solid #e2e8f0;background:linear-gradient(135deg,#0ea5e9,#0f766e);color:white;border-radius:22px 22px 0 0;display:flex;align-items:flex-start;gap:12px;justify-content:space-between">' +
+        '<div><div style="font-size:20px;font-weight:900">☁️ Save en ligne</div><div style="font-size:12px;opacity:.9;margin-top:3px">Accès rapide aux pages individuelles de configuration, aux fournisseurs de stockage et à la synchronisation client.</div></div>' +
+        '<button type="button" data-close="1" style="border:0;background:rgba(255,255,255,.18);color:white;border-radius:10px;width:34px;height:34px;cursor:pointer;font-size:20px">×</button>' +
+      '</div>' +
+      '<div style="padding:16px;display:grid;gap:10px">' + items.join('') + '</div>' +
+      '<div style="padding:12px 16px;border-top:1px solid #e2e8f0;color:#64748b;font-size:11px;line-height:1.45;background:white;border-radius:0 0 22px 22px">Vous pouvez choisir les fonctions affichées ici dans <strong>Paramètres → ☁️ Cloud / Firebase → Contenu du bouton Save en ligne</strong>.</div>' +
+      '</div>';
+    overlay.addEventListener('click', function(e){
+      if (e.target === overlay || e.target.closest('[data-close]')) closeModal();
+      var go = e.target.closest('[data-go]');
+      if (go) goTo(go.getAttribute('data-go'));
+      var provider = e.target.closest('[data-provider]');
+      if (provider) openProviderPage(provider.getAttribute('data-provider'));
+    });
+    document.body.appendChild(overlay);
+  }
 
-    // Contrôle
-    startAutoSync: startAutoSync,
-    stopAutoSync: stopAutoSync,
-    openModal: openSyncModal,
+  function checkbox(id, checked, title, desc){
+    return '<label style="display:flex;gap:10px;align-items:flex-start;padding:12px;border:1px solid #e2e8f0;border-radius:12px;background:white;cursor:pointer">' +
+      '<input id="'+id+'" type="checkbox" '+(checked?'checked':'')+' style="margin-top:2px;accent-color:#0ea5e9">' +
+      '<span><span style="display:block;font-size:13px;font-weight:850;color:#0f172a">'+esc(title)+'</span>' +
+      '<span style="display:block;font-size:11px;color:#64748b;line-height:1.4;margin-top:2px">'+esc(desc)+'</span></span>' +
+      '</label>';
+  }
+  function smallProviderCheckbox(p, checked){
+    return '<label style="display:flex;gap:9px;align-items:flex-start;padding:10px;border:1px solid #e2e8f0;border-radius:11px;background:white;cursor:pointer">' +
+      '<input id="fmso_provider_'+p.id+'" type="checkbox" '+(checked?'checked':'')+' style="margin-top:2px;accent-color:#0ea5e9">' +
+      '<span><span style="display:block;font-size:12px;font-weight:850;color:#0f172a">'+p.emoji+' Configuration '+esc(p.label)+'</span>' +
+      '<span style="display:block;font-size:10px;color:#64748b;line-height:1.35;margin-top:2px">'+esc(p.desc)+'</span></span>' +
+      '</label>';
+  }
+  function isSettingsCloudPage(){
+    var h1 = Array.prototype.slice.call(document.querySelectorAll('h1')).some(function(h){ return /Paramètres/.test(h.textContent || ''); });
+    var cloud = Array.prototype.slice.call(document.querySelectorAll('h3')).some(function(h){ return /Synchronisation\s+Cloud/i.test(h.textContent || ''); });
+    return h1 && cloud;
+  }
+  function renderSettingsPanel(){
+    var existing = document.getElementById('fm-save-online-settings-panel');
+    if (!isSettingsCloudPage()) { if (existing) existing.remove(); return; }
+    var anchor = Array.prototype.slice.call(document.querySelectorAll('h3')).find(function(h){ return /Synchronisation\s+Cloud/i.test(h.textContent || ''); });
+    if (!anchor) return;
+    var firstCard = anchor.closest('div[class*="p-5"]') || anchor.closest('div');
+    var parent = firstCard && firstCard.parentElement;
+    if (!parent) return;
+    var panel = existing || document.createElement('section');
+    panel.id = 'fm-save-online-settings-panel';
+    panel.style.cssText = 'background:white;border:2px solid rgba(14,165,233,.32);border-radius:16px;padding:16px;box-shadow:0 8px 22px rgba(15,23,42,.06);font-family:system-ui,-apple-system,Segoe UI,sans-serif';
+    var s = load();
+    var stateStr = JSON.stringify(s);
+    if (existing && existing.dataset.state === stateStr && parent.contains(existing)) return;
+    panel.dataset.state = stateStr;
+    panel.innerHTML = '<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap">' +
+      '<div><h3 style="margin:0;color:#1e293b;font-size:16px;font-weight:900">☁️ Contenu du bouton « Save en ligne »</h3>' +
+      '<p style="margin:4px 0 0;color:#64748b;font-size:12px;line-height:1.45">Choisissez les fonctions et les fournisseurs de stockage qui seront affichés dans le bouton unique du menu principal.</p></div>' +
+      '<span style="font-size:11px;font-weight:850;border-radius:999px;padding:5px 9px;background:#e0f2fe;color:#075985;border:1px solid #bae6fd">Menu principal</span>' +
+      '</div>' +
+      '<div style="margin-top:12px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap"><div style="font-size:11px;font-weight:900;color:#475569;text-transform:uppercase;letter-spacing:.04em">Actions principales</div><div style="display:flex;gap:6px"><button type="button" id="fmso_all" style="border:1px solid #bae6fd;background:#e0f2fe;color:#075985;border-radius:9px;padding:6px 8px;font-size:11px;font-weight:850;cursor:pointer">Tout sélectionner</button><button type="button" id="fmso_none" style="border:1px solid #e2e8f0;background:white;color:#475569;border-radius:9px;padding:6px 8px;font-size:11px;font-weight:850;cursor:pointer">Aucun</button></div></div>' +
+      '<div style="margin-top:8px;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px">' +
+        checkbox('fmso_drive', s.drive, '📁 Configuration Google Drive API', 'Afficher la configuration Drive / Apps Script et les options PDF + opérations.') +
+        checkbox('fmso_sheets', s.sheets, '📊 Configuration Google Sheets', 'Afficher la configuration Sheets pour sauvegarder le journal des opérations.') +
+        checkbox('fmso_sync', s.sync, '🔄 Synchronisation client', 'Afficher la page de connexion/remplissage automatique pour un autre appareil.') +
+        providerMeta.map(function(p){ return smallProviderCheckbox(p, !!(s.providers && s.providers[p.id])); }).join('') +
+      '</div>' +
+      '<div style="margin-top:10px;color:#64748b;font-size:11px;line-height:1.45">Toutes les fonctions cochées s’affichent dans <strong>Save en ligne</strong> comme des boutons de configuration. Les fournisseurs de stockage ouvrent maintenant leurs <strong>pages individuelles</strong> directement dans <strong>Save en ligne</strong>, comme Google Drive API et Google Sheets.</div>';
+    if (!existing) parent.insertBefore(panel, firstCard.nextSibling);
+    [['fmso_drive','drive'],['fmso_sheets','sheets'],['fmso_sync','sync']].forEach(function(pair){
+      var el = panel.querySelector('#' + pair[0]);
+      if (el) el.onchange = function(){ var p={}; p[pair[1]] = el.checked; save(p); };
+    });
+    providerMeta.forEach(function(p){
+      var el = panel.querySelector('#fmso_provider_' + p.id);
+      if (el) el.onchange = function(){ var patch={}; patch[p.id] = el.checked; save({ providers: patch }); };
+    });
+    var all = panel.querySelector('#fmso_all'), none = panel.querySelector('#fmso_none');
+    if (all) all.onclick = function(){ var patch={}; providerMeta.forEach(function(p){ patch[p.id] = true; }); save({ drive:true, sheets:true, sync:true, providers: patch }); };
+    if (none) none.onclick = function(){ var patch={}; providerMeta.forEach(function(p){ patch[p.id] = false; }); save({ drive:false, sheets:false, sync:false, providers: patch }); };
+  }
 
-    // Utilitaires
-    isConfigured: function () {
-      return GAS_URL && GAS_URL !== 'VOTRE_URL_WEB_APP_GOOGLE_APPS_SCRIPT';
-    },
-    isEnabled: function () {
-      return loadSettings().enabled && window.FactureMAGasSync.isConfigured();
-    }
-  };
+  var obs = new MutationObserver(function(){ ensureMenu(); renderSettingsPanel(); });
+  function start(){ ensureMenu(); renderSettingsPanel(); if (document.body) obs.observe(document.body, { childList:true, subtree:true }); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
+  else start();
 
+  window.FactureMASaveOnlineMenu = { getSettings: load, saveSettings: save, open: openModal, refresh: function(){ ensureMenu(); renderSettingsPanel(); }, openProvider: openProvider, openProviderPage: openProviderPage };
 })();
-
 </script>
 <script>
 (function(){
@@ -2349,6 +1647,9 @@ Supprimer TOUTES les données ?
 
 L'application sera réinitialisée comme une nouvelle installation.
 Un snapshot complet sera créé automatiquement pour pouvoir restaurer.`)&&($c(c,"beforeDestructive","⚠️ Sauvegarde avant RESET TOTAL"),Q.resetAll())},children:"💥 Tout réinitialiser"})]})]}),r.jsx("div",{className:"text-[11px] text-slate-500 italic text-center",children:"💡 Toutes les données sont stockées localement dans votre navigateur (localStorage). Aucune information n'est envoyée à un serveur externe."})]})}function _d({icon:c,label:Q,value:u,small:C}){return r.jsxs("div",{className:"p-3 bg-gradient-to-br from-slate-50 to-slate-100 rounded-lg text-center border border-slate-200",children:[r.jsx("div",{className:"text-xl mb-1",children:c}),r.jsx("div",{className:`${C?"text-sm":"text-2xl"} font-bold text-brand`,children:u}),r.jsx("div",{className:"text-[10px] text-slate-600 uppercase tracking-wide",children:Q})]})}function Bx(){const[c]=ja(),[Q,u]=jr.useState("settings"),[C,k]=jr.useState("all"),[M,J]=jr.useState(""),[o,b]=jr.useState(!1),[n,A]=jr.useState(null),B=c.app.appName||"Application",m=(M||B).trim(),w=m.replace(/[^a-z0-9_\-]+/gi,"_");function S(){const W={app:c.app,company:c.company,companies:c.companies,activeCompanyId:c.activeCompanyId,theme:c.theme};switch(Q){case"empty":return null;case"demo":return fg(W);case"settings":return C==="all"?ug(W):dg(W);case"all":return C==="all"?c:{...c,companies:[c.company],activeCompanyId:c.company.id,clients:c.clients.filter(V=>V.companyId===c.company.id),articles:c.articles.filter(V=>V.companyId===c.company.id),documents:c.documents.filter(V=>V.companyId===c.company.id)}}}async function h(){b(!0),A(null);try{const W=S(),te=await Bf({title:m,mode:Q==="empty"?"empty":"custom",seedData:W,storageKey:md,fileName:w+(Q==="demo"?"_demo":Q==="empty"?"_vide":Q==="all"?"_complet":"_avec_parametres")+".html"});A(te)}catch(W){alert("Erreur d'export : "+(W?.message||W))}finally{b(!1)}}const v=c.companies.length>1,g=c.clients.length,_=c.articles.length,H=c.documents.length;return r.jsxs("div",{className:"p-6 space-y-5",children:[r.jsxs("div",{children:[r.jsx("h1",{className:"text-2xl font-bold text-slate-800",children:"📦 Export HTML — Centre d'export"}),r.jsxs("p",{className:"text-sm text-slate-500",children:["Téléchargez votre application sous forme de fichier ",r.jsx("strong",{children:"HTML autonome"})," (fonctionne hors-ligne, sans installation)."]})]}),r.jsxs(ss,{className:"p-5 space-y-3",children:[r.jsxs("div",{className:"flex items-center gap-2",children:[r.jsx("span",{className:"w-7 h-7 rounded-full bg-brand text-white flex items-center justify-center text-sm font-bold",children:"1"}),r.jsx("h3",{className:"font-semibold text-slate-800",children:"Quelles données inclure ?"})]}),r.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-3",children:[r.jsx(wf,{id:"empty",active:Q==="empty",onClick:()=>u("empty"),icon:"🆕",title:"Application totalement vide",badge:"Distribution publique",badgeColor:"bg-slate-100 text-slate-700",description:"Aucune donnée, aucun paramètre, aucune société. Le destinataire commence avec une installation neuve à configurer entièrement.",details:[]}),r.jsx(wf,{id:"settings",active:Q==="settings",onClick:()=>u("settings"),icon:"⚙️",title:"Application avec mes paramètres",badge:"Recommandé ⭐",badgeColor:"bg-emerald-100 text-emerald-700",description:"Inclut tous vos paramètres (nom d'app, thème, style PDF, TVA, sociétés) mais SANS clients, articles ni documents. Idéal pour distribuer une copie pré-configurée.",details:[`🏢 ${v?c.companies.length+" sociétés":"1 société"}`,"🎨 Thèmes et style PDF","🧮 Taux TVA & paiements","✍️ Logos & signatures"]}),r.jsx(wf,{id:"all",active:Q==="all",onClick:()=>u("all"),icon:"💼",title:"Application complète (sauvegarde)",badge:"Backup",badgeColor:"bg-blue-100 text-blue-700",description:"Copie identique : paramètres + clients + articles + documents. Utile comme sauvegarde ou pour migrer vers un autre poste.",details:[`👥 ${g} clients`,`📦 ${_} articles`,`🧾 ${H} documents`]}),r.jsx(wf,{id:"demo",active:Q==="demo",onClick:()=>u("demo"),icon:"🎯",title:"Application de démonstration",badge:"Présentation",badgeColor:"bg-amber-100 text-amber-700",description:"Conserve vos paramètres et y ajoute un jeu de démonstration (4 clients, 8 articles, 6 documents). Idéal pour faire une démo client ou former.",details:["👥 4 clients exemples","📦 8 articles exemples","🧾 2 devis, 2 proforma, 2 factures"]})]})]}),v&&(Q==="settings"||Q==="all")&&r.jsxs(ss,{className:"p-5 space-y-3",children:[r.jsxs("div",{className:"flex items-center gap-2",children:[r.jsx("span",{className:"w-7 h-7 rounded-full bg-brand text-white flex items-center justify-center text-sm font-bold",children:"2"}),r.jsx("h3",{className:"font-semibold text-slate-800",children:"Quelles sociétés inclure ?"})]}),r.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-3",children:[r.jsxs("button",{type:"button",onClick:()=>k("all"),className:`p-4 rounded-lg border-2 text-left transition ${C==="all"?"border-[var(--brand-primary)] bg-brand-light":"border-slate-200 hover:border-slate-300 bg-white"}`,children:[r.jsxs("div",{className:"font-semibold text-slate-800 mb-1",children:["🏬 Toutes mes ",c.companies.length," sociétés"]}),r.jsx("div",{className:"text-[11px] text-slate-600",children:c.companies.map(W=>W.name).join(" · ")})]}),r.jsxs("button",{type:"button",onClick:()=>k("active"),className:`p-4 rounded-lg border-2 text-left transition ${C==="active"?"border-[var(--brand-primary)] bg-brand-light":"border-slate-200 hover:border-slate-300 bg-white"}`,children:[r.jsx("div",{className:"font-semibold text-slate-800 mb-1",children:"🏢 Société active uniquement"}),r.jsxs("div",{className:"text-[11px] text-slate-600",children:["Seulement : ",r.jsx("strong",{children:c.company.name})]})]})]})]}),r.jsxs(ss,{className:"p-5 space-y-4",children:[r.jsxs("div",{className:"flex items-center gap-2",children:[r.jsx("span",{className:"w-7 h-7 rounded-full bg-brand text-white flex items-center justify-center text-sm font-bold",children:v?"3":"2"}),r.jsx("h3",{className:"font-semibold text-slate-800",children:"Nommer & exporter"})]}),r.jsxs("div",{children:[r.jsx(Jt,{children:"Nom du fichier (optionnel)"}),r.jsx(ar,{value:M,onChange:W=>J(W.target.value),placeholder:B}),r.jsxs("p",{className:"text-[10px] text-slate-500 mt-1",children:["Sera enregistré sous : ",r.jsxs("code",{className:"bg-slate-100 px-1.5 rounded",children:[w,Q==="demo"?"_demo":Q==="empty"?"_vide":Q==="all"?"_complet":"_avec_parametres",".html"]})]})]}),r.jsxs("div",{className:"p-3 bg-gradient-to-br from-slate-50 to-slate-100 border border-slate-200 rounded-lg",children:[r.jsx("div",{className:"text-[10px] uppercase tracking-wider font-bold text-slate-500 mb-2",children:"Récapitulatif"}),r.jsxs("div",{className:"space-y-1 text-xs text-slate-700",children:[r.jsxs("div",{children:["📦 ",r.jsx("strong",{children:"Format :"})," Fichier HTML autonome (.html)"]}),r.jsxs("div",{children:["📋 ",r.jsx("strong",{children:"Contenu :"})," ",Q==="empty"?"Application vierge, aucune donnée":Q==="settings"?`Mes paramètres + ${C==="all"?c.companies.length+" sociétés":"1 société"} (sans données métier)`:Q==="all"?`Tout : paramètres + ${C==="all"?c.companies.length+" sociétés":"1 société"} + clients + articles + documents`:"Mes paramètres + données de démonstration"]}),r.jsxs("div",{children:["📱 ",r.jsx("strong",{children:"Utilisation :"})," Double-clic pour ouvrir, ou hébergement web. Fonctionne hors-ligne."]})]})]}),r.jsxs("div",{className:"flex items-center gap-3 flex-wrap",children:[r.jsx(Ur,{onClick:h,disabled:o,size:"lg",children:o?"⏳ Génération en cours...":"⬇️ Télécharger le fichier HTML"}),n&&r.jsxs("div",{className:"text-sm text-green-700 bg-green-50 px-3 py-2 rounded-lg border border-green-200",children:["✅ ",r.jsx("strong",{children:n.fileName})," téléchargé (",qv(n.size),")"]})]})]}),r.jsxs(ss,{className:"p-5",children:[r.jsx("h3",{className:"font-semibold text-slate-800 mb-3",children:"📊 Comparatif des modes d'export"}),r.jsx("div",{className:"overflow-x-auto",children:r.jsxs("table",{className:"w-full text-xs",children:[r.jsx("thead",{children:r.jsxs("tr",{className:"border-b-2 border-slate-200",children:[r.jsx("th",{className:"text-left py-2 px-2 font-semibold text-slate-600",children:"Contenu"}),r.jsx("th",{className:"text-center py-2 px-2",children:"🆕 Vide"}),r.jsx("th",{className:"text-center py-2 px-2",children:"⚙️ Paramètres"}),r.jsx("th",{className:"text-center py-2 px-2",children:"💼 Complet"}),r.jsx("th",{className:"text-center py-2 px-2",children:"🎯 Démo"})]})}),r.jsxs("tbody",{className:"text-slate-700",children:[r.jsx(Fu,{label:"Nom de l'application & icône",v:[!1,!0,!0,!0]}),r.jsx(Fu,{label:"Thème graphique & style PDF",v:[!1,!0,!0,!0]}),r.jsx(Fu,{label:"Taux TVA & moyens de paiement",v:[!1,!0,!0,!0]}),r.jsx(Fu,{label:"Sociétés (logo, ICE, RC, RIB...)",v:[!1,!0,!0,!0]}),r.jsx(Fu,{label:"Signatures / Cachets",v:[!1,!0,!0,!0]}),r.jsx(Fu,{label:"Clients",v:[!1,!1,!0,"4 demo"]}),r.jsx(Fu,{label:"Articles & stock",v:[!1,!1,!0,"8 demo"]}),r.jsx(Fu,{label:"Documents (factures, devis...)",v:[!1,!1,!0,"6 demo"]})]})]})})]}),r.jsx("div",{className:"text-[11px] text-slate-500 italic text-center",children:"💡 Le fichier exporté ne permet pas d'accéder aux Paramètres ni de ré-exporter — il s'agit d'une version finale prête pour l'utilisateur final."})]})}function wf({active:c,onClick:Q,icon:u,title:C,badge:k,badgeColor:M,description:J,details:o}){return r.jsxs("button",{type:"button",onClick:Q,className:`p-4 rounded-xl border-2 text-left transition ${c?"border-[var(--brand-primary)] bg-brand-light shadow-sm":"border-slate-200 hover:border-slate-300 bg-white"}`,children:[r.jsxs("div",{className:"flex items-start gap-3 mb-2",children:[r.jsx("div",{className:"text-3xl",children:u}),r.jsxs("div",{className:"flex-1 min-w-0",children:[r.jsxs("div",{className:"flex items-center gap-2 mb-1",children:[r.jsx("div",{className:"font-semibold text-slate-800",children:C}),c&&r.jsx("span",{className:"text-brand",children:"●"})]}),r.jsx("span",{className:`inline-block text-[10px] font-medium px-2 py-0.5 rounded-full ${M}`,children:k})]})]}),r.jsx("p",{className:"text-[11px] text-slate-600 leading-snug mb-2",children:J}),o.length>0&&r.jsx("ul",{className:"space-y-0.5 text-[11px] text-slate-700",children:o.map((b,n)=>r.jsxs("li",{children:["• ",b]},n))})]})}function Fu({label:c,v:Q}){return r.jsxs("tr",{className:"border-b border-slate-100",children:[r.jsx("td",{className:"py-1.5 px-2 text-slate-700",children:c}),Q.map((u,C)=>r.jsx("td",{className:"text-center py-1.5 px-2",children:u===!0?r.jsx("span",{className:"text-green-600",children:"✓"}):u===!1?r.jsx("span",{className:"text-slate-300",children:"—"}):r.jsx(ri,{color:"amber",children:u})},C))]})}function jx(){const[c]=ja(),[Q,u]=jr.useState("unpaid"),[C,k]=jr.useState("sales"),[M,J]=jr.useState(null),o=c.documents.filter(v=>!v.companyId||v.companyId===c.activeCompanyId),b=o.filter(v=>v.type==="facture"&&v.status!=="annule"),n=o.filter(v=>v.type==="factureAchat"&&v.status!=="annule"),A=new Date().toISOString().slice(0,10);function B(v){return v.filter(g=>{const _=lc(g);return Q==="unpaid"?_.isUnpaid:Q==="partial"?_.isPartiallyPaid:Q==="overdue"?!_.isFullyPaid&&g.dueDate&&g.dueDate<A:!_.isFullyPaid})}const m=B(C==="sales"?b:n),w=m.reduce((v,g)=>v+lc(g).remaining,0),S=m.length,h=m.filter(v=>v.dueDate&&v.dueDate<A&&!lc(v).isFullyPaid).length;return r.jsxs("div",{className:"p-6 space-y-5",children:[r.jsxs("div",{children:[r.jsx("h1",{className:"text-2xl font-bold text-slate-800",children:"💰 Crédits & Échéances"}),r.jsx("p",{className:"text-sm text-slate-500",children:"Suivi des paiements clients et fournisseurs, échéances et soldes restants."})]}),r.jsxs("div",{className:"grid grid-cols-1 sm:grid-cols-3 gap-3",children:[r.jsxs(ss,{className:"p-4 bg-gradient-to-br from-red-50 to-orange-50 border-red-200",children:[r.jsx("div",{className:"text-2xl mb-1",children:"💸"}),r.jsx("div",{className:"text-xs text-red-700 font-medium",children:"Total à recevoir / payer"}),r.jsx("div",{className:"text-xl font-bold text-red-800 mt-1",children:zs(w)})]}),r.jsxs(ss,{className:"p-4 bg-gradient-to-br from-amber-50 to-yellow-50 border-amber-200",children:[r.jsx("div",{className:"text-2xl mb-1",children:"📅"}),r.jsx("div",{className:"text-xs text-amber-700 font-medium",children:"Documents en attente"}),r.jsx("div",{className:"text-xl font-bold text-amber-800 mt-1",children:S})]}),r.jsxs(ss,{className:"p-4 bg-gradient-to-br from-rose-50 to-pink-50 border-rose-300",children:[r.jsx("div",{className:"text-2xl mb-1",children:"⚠️"}),r.jsx("div",{className:"text-xs text-rose-700 font-medium",children:"En retard"}),r.jsx("div",{className:"text-xl font-bold text-rose-800 mt-1",children:h})]})]}),r.jsxs("div",{className:"flex gap-1 p-1 bg-slate-100 rounded-lg w-fit",children:[r.jsx("button",{onClick:()=>k("sales"),className:`px-4 py-2 text-sm font-medium rounded-md transition ${C==="sales"?"bg-white shadow-sm text-brand":"text-slate-600"}`,children:"💼 Créances clients (ventes)"}),r.jsx("button",{onClick:()=>k("purchases"),className:`px-4 py-2 text-sm font-medium rounded-md transition ${C==="purchases"?"bg-white shadow-sm text-brand":"text-slate-600"}`,children:"🛒 Dettes fournisseurs (achats)"})]}),r.jsx("div",{className:"flex gap-2 flex-wrap",children:[{id:"unpaid",label:"⛔ Impayés",count:(C==="sales"?b:n).filter(v=>lc(v).isUnpaid).length},{id:"partial",label:"⏳ Partiels",count:(C==="sales"?b:n).filter(v=>lc(v).isPartiallyPaid).length},{id:"overdue",label:"⚠️ En retard",count:(C==="sales"?b:n).filter(v=>v.dueDate&&v.dueDate<A&&!lc(v).isFullyPaid).length},{id:"all",label:"📋 Tous avec solde",count:(C==="sales"?b:n).filter(v=>!lc(v).isFullyPaid).length}].map(v=>r.jsxs("button",{onClick:()=>u(v.id),className:`px-3 py-1.5 rounded-md text-xs font-medium border-2 transition ${Q===v.id?"border-[var(--brand-primary)] bg-brand-light text-brand":"border-slate-200 bg-white text-slate-600 hover:border-slate-300"}`,children:[v.label," ",r.jsxs("span",{className:"opacity-70",children:["(",v.count,")"]})]},v.id))}),m.length===0?r.jsxs(ss,{className:"p-10 text-center text-slate-500",children:[r.jsx("div",{className:"text-3xl mb-2",children:"✅"}),r.jsx("div",{className:"font-medium",children:"Aucun document correspondant à ce filtre"}),r.jsx("div",{className:"text-xs mt-1",children:"Tout est à jour !"})]}):r.jsx(ss,{className:"overflow-hidden",children:r.jsx("div",{className:"overflow-x-auto",children:r.jsxs("table",{className:"w-full text-sm",children:[r.jsx("thead",{className:"bg-slate-50 text-slate-600 text-xs uppercase",children:r.jsxs("tr",{children:[r.jsx("th",{className:"text-left px-4 py-3",children:"N°"}),r.jsx("th",{className:"text-left px-4 py-3",children:C==="sales"?"Client":"Fournisseur"}),r.jsx("th",{className:"text-left px-4 py-3",children:"Date"}),r.jsx("th",{className:"text-left px-4 py-3",children:"Échéance"}),r.jsx("th",{className:"text-right px-4 py-3",children:"Total TTC"}),r.jsx("th",{className:"text-right px-4 py-3",children:"Payé"}),r.jsx("th",{className:"text-right px-4 py-3",children:"Restant"}),r.jsx("th",{className:"text-center px-4 py-3",children:"État"}),r.jsx("th",{className:"text-right px-4 py-3",children:"Action"})]})}),r.jsx("tbody",{children:m.map(v=>{const g=c.clients.find(V=>V.id===v.clientId),_=CA(v),H=lc(v),W=v.dueDate&&v.dueDate<A;return r.jsxs("tr",{className:"border-t border-slate-100 hover:bg-slate-50",children:[r.jsx("td",{className:"px-4 py-3 font-mono text-xs font-medium text-slate-800",children:v.number}),r.jsx("td",{className:"px-4 py-3 text-slate-700",children:g?.name||"—"}),r.jsx("td",{className:"px-4 py-3 text-slate-600 text-xs",children:new Date(v.date).toLocaleDateString("fr-FR")}),r.jsxs("td",{className:`px-4 py-3 text-xs ${W?"text-red-600 font-semibold":"text-slate-600"}`,children:[v.dueDate?new Date(v.dueDate).toLocaleDateString("fr-FR"):"—",W&&" ⚠️"]}),r.jsx("td",{className:"px-4 py-3 text-right font-medium",children:zs(_.totalTTC)}),r.jsx("td",{className:"px-4 py-3 text-right text-green-700",children:zs(H.paid)}),r.jsx("td",{className:"px-4 py-3 text-right text-red-700 font-bold",children:zs(H.remaining)}),r.jsx("td",{className:"px-4 py-3 text-center",children:r.jsxs("div",{className:"flex items-center justify-center gap-1",children:[r.jsx("div",{className:"w-16 h-2 bg-slate-200 rounded-full overflow-hidden",children:r.jsx("div",{className:"h-full bg-green-500",style:{width:`${H.progressPct}%`}})}),r.jsxs("span",{className:"text-[10px] text-slate-500",children:[H.progressPct.toFixed(0),"%"]})]})}),r.jsx("td",{className:"px-4 py-3 text-right",children:r.jsx(Ur,{size:"sm",onClick:()=>J(v.id),children:"💰 Paiement"})})]},v.id)})})]})})}),M&&r.jsx(Cx,{docId:M,onClose:()=>J(null)})]})}function Cx({docId:c,onClose:Q}){const[u,C]=ja(),k=u.documents.find(H=>H.id===c);if(!k)return null;const M=CA(k),J=lc(k),o=u.clients.find(H=>H.id===k.clientId),[b,n]=jr.useState(J.remaining.toFixed(2)),[A,B]=jr.useState("especes"),[m,w]=jr.useState(""),[S,h]=jr.useState(new Date().toISOString().slice(0,10)),[v,g]=jr.useState("");function _(){const H=parseFloat(b);if(isNaN(H)||H<=0){alert("Montant invalide");return}C.addPayment(c,{date:S,amount:H,method:A,ref:m||void 0,notes:v||void 0}),Q()}return r.jsx($A,{open:!0,onClose:Q,title:`💰 Enregistrer un paiement — ${k.number}`,size:"lg",children:r.jsxs("div",{className:"p-5 space-y-3",children:[r.jsxs("div",{className:"p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-1.5",children:[r.jsxs("div",{className:"flex justify-between text-sm",children:[r.jsx("span",{className:"text-slate-600",children:"Client :"}),r.jsx("strong",{children:o?.name})]}),r.jsxs("div",{className:"flex justify-between text-sm",children:[r.jsx("span",{className:"text-slate-600",children:"Total TTC :"}),r.jsx("strong",{children:zs(M.totalTTC)})]}),r.jsxs("div",{className:"flex justify-between text-sm",children:[r.jsx("span",{className:"text-slate-600",children:"Déjà payé :"}),r.jsx("strong",{className:"text-green-700",children:zs(J.paid)})]}),r.jsxs("div",{className:"flex justify-between text-sm pt-1.5 border-t border-slate-200",children:[r.jsx("span",{className:"text-slate-700 font-semibold",children:"Restant à payer :"}),r.jsx("strong",{className:"text-red-700 text-base",children:zs(J.remaining)})]})]}),k.payments&&k.payments.length>0&&r.jsxs("div",{children:[r.jsx("div",{className:"text-xs font-semibold text-slate-600 uppercase tracking-wide mb-1.5",children:"Historique des paiements"}),r.jsx("div",{className:"space-y-1.5 max-h-32 overflow-y-auto",children:k.payments.map(H=>{const W=Zu.find(V=>V.value===H.method);return r.jsxs("div",{className:"flex items-center justify-between p-2 bg-green-50 border border-green-200 rounded text-xs",children:[r.jsxs("div",{className:"flex items-center gap-2",children:[r.jsx("span",{children:W?.icon||"💵"}),r.jsx("span",{className:"font-medium",children:new Date(H.date).toLocaleDateString("fr-FR")}),r.jsxs("span",{className:"text-slate-600",children:["— ",W?.label]}),H.ref&&r.jsxs("span",{className:"font-mono text-[10px] text-slate-500",children:["(",H.ref,")"]})]}),r.jsxs("div",{className:"flex items-center gap-2",children:[r.jsx("strong",{className:"text-green-700",children:zs(H.amount)}),r.jsx("button",{onClick:()=>C.deletePayment(c,H.id),className:"text-red-500 hover:bg-red-100 px-1.5 py-0.5 rounded",children:"✕"})]})]},H.id)})})]}),r.jsxs("div",{className:"pt-3 border-t border-slate-200",children:[r.jsx("div",{className:"text-xs font-semibold text-slate-600 uppercase tracking-wide mb-2",children:"➕ Nouveau paiement"}),r.jsxs("div",{className:"grid grid-cols-2 gap-3",children:[r.jsxs("div",{children:[r.jsx(Jt,{children:"Date"}),r.jsx(ar,{type:"date",value:S,onChange:H=>h(H.target.value)})]}),r.jsxs("div",{children:[r.jsx(Jt,{children:"Montant (MAD)"}),r.jsx(ar,{type:"number",step:"0.01",value:b,onChange:H=>n(H.target.value)})]}),r.jsxs("div",{children:[r.jsx(Jt,{children:"Mode de paiement"}),r.jsx(ul,{value:A,onChange:H=>B(H.target.value),children:Zu.map(H=>r.jsxs("option",{value:H.value,children:[H.icon," ",H.label]},H.value))})]}),r.jsxs("div",{children:[r.jsx(Jt,{children:"Référence (n° chèque...)"}),r.jsx(ar,{value:m,onChange:H=>w(H.target.value),placeholder:"Ex: CHQ-12345"})]}),r.jsxs("div",{className:"col-span-2",children:[r.jsx(Jt,{children:"Notes"}),r.jsx(ar,{value:v,onChange:H=>g(H.target.value),placeholder:"Observations..."})]})]}),r.jsxs("div",{className:"flex gap-2 mt-2 flex-wrap",children:[r.jsxs("button",{onClick:()=>n(J.remaining.toFixed(2)),className:"text-xs px-2 py-1 rounded bg-slate-100 hover:bg-slate-200",children:["💯 Solde total (",zs(J.remaining),")"]}),r.jsx("button",{onClick:()=>n((J.remaining/2).toFixed(2)),className:"text-xs px-2 py-1 rounded bg-slate-100 hover:bg-slate-200",children:"½ Demi-solde"}),r.jsx("button",{onClick:()=>n((M.totalTTC/3).toFixed(2)),className:"text-xs px-2 py-1 rounded bg-slate-100 hover:bg-slate-200",children:"⅓ Acompte 1/3"})]})]}),r.jsxs("div",{className:"flex justify-end gap-2 pt-3 border-t border-slate-200",children:[r.jsx(Ur,{variant:"outline",onClick:Q,children:"Annuler"}),r.jsx(Ur,{onClick:_,children:"💾 Enregistrer le paiement"})]})]})})}function Lm(){return{id:"",name:"",ice:"",rc:"",if:"",address:"",city:"",phone:"",email:"",contactPerson:"",category:"",bank:"",rib:"",notes:""}}function PaymentModesPage(){const[c,Q]=ja(),[u,C]=jr.useState(""),[k,M]=jr.useState("all"),[J,o]=jr.useState(""),b=(c.app.salesReps||[]).filter(Boolean),n=c.documents.filter(H=>(!H.companyId||H.companyId===c.activeCompanyId)&&H.type==="facture"&&H.status!=="annule"),A=n.map(H=>{const W=c.clients.find(pe=>pe.id===H.clientId),V=CA(H),te=lc(H),X=H.payments&&H.payments.length?H.payments:H.paymentMethod&&H.paymentMethod!=="nonPaye"?[{id:"legacy",date:H.paymentDate||H.date,amount:V.totalTTC,method:H.paymentMethod,ref:H.paymentRef,notes:"Ancien paiement"}]:[],ie=[...new Set(X.map(pe=>pe.method||"autre"))],ce=ie.length?ie.map(pe=>qm(pe)).join(" + "):"❌ Non payé";return{doc:H,client:W,totals:V,pay:te,payments:X,methods:ie,methodLabel:ce,commercial:H.commercialName||""}}).filter(H=>k==="all"?!0:k==="paid"?H.pay.isFullyPaid:k==="partial"?H.pay.isPartiallyPaid:k==="unpaid"?H.pay.isUnpaid:H.methods.includes(k)).filter(H=>!J||H.commercial===J),B=A.flatMap(H=>H.payments.map(W=>({...W,doc:H.doc,client:H.client,commercial:H.commercial}))),m=Zu.filter(H=>H.value!=="nonPaye").map(H=>{const W=B.filter(V=>(V.method||"autre")===H.value).reduce((V,te)=>V+(+te.amount||0),0);return{...H,total:W,count:B.filter(V=>(V.method||"autre")===H.value).length}}).filter(H=>H.count>0),w=b.map(H=>({name:H,total:A.filter(W=>W.commercial===H).reduce((W,V)=>W+V.pay.paid,0),docs:A.filter(W=>W.commercial===H).length}));function S(){const H=u.trim();H&&!b.includes(H)&&(Q.updateApp({salesReps:[...b,H]}),C(""))}function h(H){Q.updateApp({salesReps:b.filter(W=>W!==H)}),c.documents.filter(W=>W.commercialName===H).forEach(W=>Q.updateDocument(W.id,{commercialName:""}))}return r.jsxs("div",{className:"p-6 space-y-5",children:[r.jsxs("div",{className:"flex items-start justify-between flex-wrap gap-3",children:[r.jsxs("div",{children:[r.jsx("h1",{className:"text-2xl font-bold text-slate-800",children:"💳 Modes de paiement"}),r.jsx("p",{className:"text-sm text-slate-500",children:"Remplissage automatique depuis les paiements des factures de ventes + affectation des commerciaux."})]}),r.jsx(ri,{color:"brand",children:`${B.length} paiement(s) détecté(s)`})]}),r.jsxs("div",{className:"grid grid-cols-1 sm:grid-cols-4 gap-3",children:[r.jsx(ss,{className:"p-4",children:r.jsxs("div",{children:[r.jsx("div",{className:"text-xs text-slate-500",children:"Factures de vente"}),r.jsx("div",{className:"text-2xl font-bold text-brand",children:n.length})]})}),r.jsx(ss,{className:"p-4",children:r.jsxs("div",{children:[r.jsx("div",{className:"text-xs text-slate-500",children:"Total encaissé"}),r.jsx("div",{className:"text-2xl font-bold text-green-700",children:zs(A.reduce((H,W)=>H+W.pay.paid,0))})]})}),r.jsx(ss,{className:"p-4",children:r.jsxs("div",{children:[r.jsx("div",{className:"text-xs text-slate-500",children:"Reste à encaisser"}),r.jsx("div",{className:"text-2xl font-bold text-red-700",children:zs(A.reduce((H,W)=>H+W.pay.remaining,0))})]})}),r.jsx(ss,{className:"p-4",children:r.jsxs("div",{children:[r.jsx("div",{className:"text-xs text-slate-500",children:"Commerciaux"}),r.jsx("div",{className:"text-2xl font-bold text-slate-800",children:b.length})]})})]}),r.jsxs(ss,{className:"p-5 space-y-3",children:[r.jsx("h3",{className:"font-semibold text-slate-800",children:"👤 Noms des commerciaux"}),r.jsxs("div",{className:"flex gap-2 flex-wrap",children:[r.jsx(ar,{value:u,onChange:H=>C(H.target.value),placeholder:"Nom du commercial",className:"max-w-xs"}),r.jsx(Ur,{onClick:S,children:"+ Ajouter"})]}),b.length===0?r.jsx("div",{className:"text-sm text-slate-400",children:"Aucun commercial enregistré."}):r.jsx("div",{className:"flex gap-2 flex-wrap",children:b.map(H=>r.jsxs("span",{className:"inline-flex items-center gap-1 px-2 py-1 rounded-full bg-slate-100 border border-slate-200 text-xs",children:["👤 ",H,r.jsx("button",{onClick:()=>h(H),className:"text-red-500 hover:text-red-700 ml-1",children:"×"})]},H))})]}),r.jsxs(ss,{className:"p-5 space-y-3",children:[r.jsx("h3",{className:"font-semibold text-slate-800",children:"📊 Résumé automatique par mode de paiement"}),m.length===0?r.jsx("div",{className:"text-sm text-slate-400",children:"Aucun paiement enregistré dans les factures de ventes."}):r.jsx("div",{className:"grid grid-cols-2 sm:grid-cols-4 gap-2",children:m.map(H=>r.jsxs("button",{onClick:()=>M(H.value),className:`p-3 rounded-lg border text-left ${k===H.value?"border-[var(--brand-primary)] bg-brand-light":"border-slate-200 bg-white hover:bg-slate-50"}`,children:[r.jsxs("div",{className:"text-xs font-semibold text-slate-700",children:[H.icon," ",H.label]}),r.jsx("div",{className:"text-lg font-bold text-slate-900",children:zs(H.total)}),r.jsxs("div",{className:"text-[10px] text-slate-500",children:[H.count," paiement(s)"]})]},H.value))})]}),r.jsxs(ss,{className:"p-5 space-y-3",children:[r.jsxs("div",{className:"flex items-center justify-between flex-wrap gap-2",children:[r.jsx("h3",{className:"font-semibold text-slate-800",children:"🧾 Factures de ventes — paiement & commercial"}),r.jsxs("div",{className:"flex gap-2 flex-wrap",children:[r.jsxs(ul,{value:k,onChange:H=>M(H.target.value),className:"w-auto",children:[r.jsx("option",{value:"all",children:"Tous les paiements"}),r.jsx("option",{value:"paid",children:"Payées"}),r.jsx("option",{value:"partial",children:"Partielles"}),r.jsx("option",{value:"unpaid",children:"Non payées"}),Zu.filter(H=>H.value!=="nonPaye").map(H=>r.jsxs("option",{value:H.value,children:[H.icon," ",H.label]},H.value))]}),r.jsxs(ul,{value:J,onChange:H=>o(H.target.value),className:"w-auto",children:[r.jsx("option",{value:"",children:"Tous commerciaux"}),b.map(H=>r.jsx("option",{value:H,children:H},H))]})]})]}),r.jsx("div",{className:"overflow-x-auto",children:r.jsxs("table",{className:"w-full text-sm",children:[r.jsx("thead",{className:"bg-slate-50 text-slate-600 text-xs uppercase",children:r.jsxs("tr",{children:[r.jsx("th",{className:"text-left px-3 py-2",children:"Facture"}),r.jsx("th",{className:"text-left px-3 py-2",children:"Client"}),r.jsx("th",{className:"text-left px-3 py-2",children:"Commercial"}),r.jsx("th",{className:"text-left px-3 py-2",children:"Mode auto"}),r.jsx("th",{className:"text-right px-3 py-2",children:"Payé"}),r.jsx("th",{className:"text-right px-3 py-2",children:"Reste"})]})}),r.jsx("tbody",{children:A.map(H=>r.jsxs("tr",{className:"border-t border-slate-100 hover:bg-slate-50",children:[r.jsxs("td",{className:"px-3 py-2",children:[r.jsx("div",{className:"font-mono text-xs font-semibold",children:H.doc.number}),r.jsx("div",{className:"text-[10px] text-slate-500",children:H.doc.date})]}),r.jsx("td",{className:"px-3 py-2",children:H.client?.name||"—"}),r.jsx("td",{className:"px-3 py-2 min-w-[180px]",children:r.jsxs("div",{className:"flex gap-1",children:[r.jsxs(ul,{value:H.commercial,onChange:W=>Q.updateDocument(H.doc.id,{commercialName:W.target.value}),className:"text-xs",children:[r.jsx("option",{value:"",children:"— choisir —"}),b.map(W=>r.jsx("option",{value:W,children:W},W))]}),r.jsx(ar,{value:H.commercial,onChange:W=>Q.updateDocument(H.doc.id,{commercialName:W.target.value}),placeholder:"Nom",className:"text-xs"})]})}),r.jsx("td",{className:"px-3 py-2 text-xs",children:H.methodLabel}),r.jsx("td",{className:"px-3 py-2 text-right text-green-700 font-semibold",children:zs(H.pay.paid)}),r.jsx("td",{className:"px-3 py-2 text-right text-red-700 font-semibold",children:zs(H.pay.remaining)})]},H.doc.id))})]})})]}),B.length>0&&r.jsxs(ss,{className:"p-5 space-y-3",children:[r.jsx("h3",{className:"font-semibold text-slate-800",children:"📋 Détail des paiements détectés"}),r.jsx("div",{className:"overflow-x-auto max-h-96",children:r.jsxs("table",{className:"w-full text-xs",children:[r.jsx("thead",{className:"bg-slate-50 text-slate-600 uppercase",children:r.jsxs("tr",{children:[r.jsx("th",{className:"text-left px-3 py-2",children:"Date"}),r.jsx("th",{className:"text-left px-3 py-2",children:"Facture"}),r.jsx("th",{className:"text-left px-3 py-2",children:"Client"}),r.jsx("th",{className:"text-left px-3 py-2",children:"Mode"}),r.jsx("th",{className:"text-left px-3 py-2",children:"Réf."}),r.jsx("th",{className:"text-right px-3 py-2",children:"Montant"})]})}),r.jsx("tbody",{children:B.map((H,W)=>r.jsxs("tr",{className:"border-t border-slate-100",children:[r.jsx("td",{className:"px-3 py-2",children:H.date}),r.jsx("td",{className:"px-3 py-2 font-mono",children:H.doc.number}),r.jsx("td",{className:"px-3 py-2",children:H.client?.name||"—"}),r.jsx("td",{className:"px-3 py-2",children:qm(H.method)}),r.jsx("td",{className:"px-3 py-2",children:H.ref||"—"}),r.jsx("td",{className:"px-3 py-2 text-right font-semibold",children:zs(+H.amount||0)})]},H.id||W))})]})})]}),w.length>0&&r.jsxs(ss,{className:"p-5 space-y-3",children:[r.jsx("h3",{className:"font-semibold text-slate-800",children:"🏆 Résumé par commercial"}),r.jsx("div",{className:"grid grid-cols-1 sm:grid-cols-3 gap-2",children:w.map(H=>r.jsxs("div",{className:"p-3 rounded-lg border border-slate-200 bg-white",children:[r.jsx("div",{className:"text-sm font-semibold text-slate-800",children:H.name}),r.jsx("div",{className:"text-lg font-bold text-brand",children:zs(H.total)}),r.jsxs("div",{className:"text-[10px] text-slate-500",children:[H.docs," facture(s)"]})]},H.name))})]})]})}function Sx(){const[c,Q]=ja(),[u,C]=jr.useState(null),[k,M]=jr.useState(""),J=(c.suppliers||[]).filter(n=>!n.companyId||n.companyId===c.activeCompanyId),o=J.filter(n=>n.name.toLowerCase().includes(k.toLowerCase())||(n.ice||"").includes(k)||(n.city||"").toLowerCase().includes(k.toLowerCase())||(n.category||"").toLowerCase().includes(k.toLowerCase())),b=c.documents.filter(n=>(!n.companyId||n.companyId===c.activeCompanyId)&&n.type==="factureAchat");return r.jsxs("div",{className:"p-6 space-y-5",children:[r.jsxs("div",{className:"flex items-center justify-between flex-wrap gap-3",children:[r.jsxs("div",{children:[r.jsx("h1",{className:"text-2xl font-bold text-slate-800",children:"🚚 Fournisseurs"}),r.jsxs("p",{className:"text-sm text-slate-500",children:[J.length," fournisseur(s) enregistré(s)",c.companies.length>1&&r.jsxs("span",{className:"ml-2 inline-flex items-center gap-1 px-2 py-0.5 bg-brand-light text-brand rounded-md text-xs font-medium",children:["🏢 ",c.company.name]})]})]}),r.jsx(Ur,{onClick:()=>C(Lm()),children:"+ Nouveau fournisseur"})]}),r.jsx(ar,{placeholder:"🔍 Rechercher par nom, ICE, ville ou catégorie...",value:k,onChange:n=>M(n.target.value)}),o.length===0?r.jsx(ss,{children:r.jsx(_f,{icon:r.jsx("span",{className:"text-2xl",children:"🚚"}),title:"Aucun fournisseur",description:"Ajoutez vos fournisseurs pour faciliter la saisie des factures d'achat.",action:r.jsx(Ur,{onClick:()=>C(Lm()),children:"+ Nouveau fournisseur"})})}):r.jsx(ss,{className:"overflow-hidden",children:r.jsx("div",{className:"overflow-x-auto",children:r.jsxs("table",{className:"w-full text-sm",children:[r.jsx("thead",{className:"bg-slate-50 text-slate-600 text-xs uppercase",children:r.jsxs("tr",{children:[r.jsx("th",{className:"text-left px-4 py-3",children:"Nom"}),r.jsx("th",{className:"text-left px-4 py-3",children:"Catégorie"}),r.jsx("th",{className:"text-left px-4 py-3",children:"ICE"}),r.jsx("th",{className:"text-left px-4 py-3",children:"Contact"}),r.jsx("th",{className:"text-left px-4 py-3",children:"Ville"}),r.jsx("th",{className:"text-center px-4 py-3",children:"Achats"}),r.jsx("th",{className:"text-right px-4 py-3",children:"Actions"})]})}),r.jsx("tbody",{children:o.map(n=>{const A=b.filter(B=>B.supplierId===n.id).length;return r.jsxs("tr",{className:"border-t border-slate-100 hover:bg-slate-50",children:[r.jsxs("td",{className:"px-4 py-3",children:[r.jsx("div",{className:"font-medium text-slate-800",children:n.name}),n.contactPerson&&r.jsxs("div",{className:"text-xs text-slate-500",children:["👤 ",n.contactPerson]})]}),r.jsx("td",{className:"px-4 py-3",children:n.category&&r.jsx(ri,{color:"blue",children:n.category})}),r.jsx("td",{className:"px-4 py-3 text-slate-600 font-mono text-xs",children:n.ice||"—"}),r.jsxs("td",{className:"px-4 py-3 text-slate-600 text-xs",children:[n.phone&&r.jsxs("div",{children:["📞 ",n.phone]}),n.email&&r.jsxs("div",{className:"truncate max-w-[180px]",children:["✉️ ",n.email]})]}),r.jsx("td",{className:"px-4 py-3 text-slate-600",children:n.city||"—"}),r.jsx("td",{className:"px-4 py-3 text-center",children:A>0?r.jsx(ri,{color:"brand",children:A}):r.jsx("span",{className:"text-slate-300",children:"0"})}),r.jsx("td",{className:"px-4 py-3 text-right",children:r.jsxs("div",{className:"inline-flex gap-1",children:[r.jsx(Ur,{size:"sm",variant:"ghost",onClick:()=>C(n),children:"✏️"}),r.jsx(Ur,{size:"sm",variant:"ghost",onClick:()=>{confirm(`Supprimer ${n.name} ?`)&&Q.deleteSupplier(n.id)},children:"🗑️"})]})})]},n.id)})})]})})}),r.jsx($A,{open:!!u,onClose:()=>C(null),title:u?.id?"Modifier fournisseur":"Nouveau fournisseur",size:"lg",children:u&&r.jsxs("div",{className:"p-5 space-y-3",children:[r.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-3",children:[r.jsxs("div",{className:"md:col-span-2",children:[r.jsx(Jt,{children:"Raison sociale *"}),r.jsx(ar,{value:u.name,onChange:n=>C({...u,name:n.target.value})})]}),r.jsxs("div",{children:[r.jsx(Jt,{children:"Catégorie"}),r.jsx(ar,{value:u.category||"",onChange:n=>C({...u,category:n.target.value}),placeholder:"Informatique, Fournitures, Services..."})]}),r.jsxs("div",{children:[r.jsx(Jt,{children:"Personne de contact"}),r.jsx(ar,{value:u.contactPerson||"",onChange:n=>C({...u,contactPerson:n.target.value}),placeholder:"Nom du commercial"})]}),r.jsxs("div",{children:[r.jsx(Jt,{children:"ICE"}),r.jsx(ar,{value:u.ice,onChange:n=>C({...u,ice:n.target.value}),placeholder:"15 chiffres"})]}),r.jsxs("div",{children:[r.jsx(Jt,{children:"RC"}),r.jsx(ar,{value:u.rc||"",onChange:n=>C({...u,rc:n.target.value})})]}),r.jsxs("div",{children:[r.jsx(Jt,{children:"IF"}),r.jsx(ar,{value:u.if||"",onChange:n=>C({...u,if:n.target.value})})]}),r.jsxs("div",{children:[r.jsx(Jt,{children:"Ville"}),r.jsx(ar,{value:u.city,onChange:n=>C({...u,city:n.target.value})})]}),r.jsxs("div",{className:"md:col-span-2",children:[r.jsx(Jt,{children:"Adresse"}),r.jsx(ar,{value:u.address,onChange:n=>C({...u,address:n.target.value})})]}),r.jsxs("div",{children:[r.jsx(Jt,{children:"Téléphone"}),r.jsx(ar,{value:u.phone,onChange:n=>C({...u,phone:n.target.value})})]}),r.jsxs("div",{children:[r.jsx(Jt,{children:"Email"}),r.jsx(ar,{type:"email",value:u.email,onChange:n=>C({...u,email:n.target.value})})]})]}),r.jsxs("div",{className:"pt-3 border-t border-slate-100",children:[r.jsx("div",{className:"text-xs font-semibold text-slate-600 uppercase tracking-wide mb-2",children:"🏦 Coordonnées bancaires (pour paiements)"}),r.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-3",children:[r.jsxs("div",{children:[r.jsx(Jt,{children:"Banque"}),r.jsx(ar,{value:u.bank||"",onChange:n=>C({...u,bank:n.target.value})})]}),r.jsxs("div",{children:[r.jsx(Jt,{children:"RIB"}),r.jsx(ar,{value:u.rib||"",onChange:n=>C({...u,rib:n.target.value}),className:"font-mono text-xs"})]})]})]}),r.jsxs("div",{children:[r.jsx(Jt,{children:"Notes"}),r.jsx(ar,{value:u.notes||"",onChange:n=>C({...u,notes:n.target.value}),placeholder:"Conditions de paiement, remises..."})]}),r.jsxs("div",{className:"flex justify-end gap-2 pt-3 border-t border-slate-100",children:[r.jsx(Ur,{variant:"outline",onClick:()=>C(null),children:"Annuler"}),r.jsx(Ur,{onClick:()=>{if(!u.name.trim()){alert("Le nom est requis");return}Q.saveSupplier(u),C(null)},children:"💾 Enregistrer"})]})]})})]})}function Om({kind:c,onUnlock:Q,onCancel:u}){const[C]=ja(),k=C.app,M=k.auth||{},J=c==="access"?M?.accessPasswordHash:c==="google"?M?.googlePasswordHash:M?.dataPasswordHash,o=M?.username,[b,n]=jr.useState(""),[A,B]=jr.useState(""),[m,w]=jr.useState(0),[S,h]=jr.useState(!1);async function v(W){if(W?.preventDefault(),!S){h(!0),B("");try{await Uh(b,J||"")?(c==="access"?zh(!0):c==="google"?setGoogleUnlocked(!0):yg(!0),Q()):(w(V=>V+1),B("❌ Mot de passe incorrect"),n(""))}finally{h(!1)}}}const g=c==="access"?"🔐 Application verrouillée":c==="google"?"☁️ Save en ligne protégé":"🔐 Accès aux données protégé",_=c==="access"?"Veuillez saisir votre mot de passe pour ouvrir l'application.":c==="google"?"Veuillez saisir le mot de passe pour accéder au bouton Save en ligne et aux fonctions de sauvegarde en ligne.":"Cette section est protégée par un mot de passe supplémentaire.",H=lockThemePresets.find(W=>W.id===(M?.lockTheme||"slate"))||lockThemePresets[0],V=M?.lockStyle||"classic",te=lockCardStyle(H,V),X=V==="minimal"?"rounded-lg":V==="soft"?"rounded-2xl":"rounded-2xl",lockLogo=M?.lockLogo,lockTitle=M?.lockTitle||g,lockText=M?.lockText||_;return r.jsx("div",{className:"fixed inset-0 z-[100] flex items-center justify-center p-4",style:{background:H.bg},children:r.jsx("div",{className:"w-full max-w-md",children:r.jsxs("div",{className:`bg-white ${X} shadow-2xl p-8 space-y-5`,style:te,children:[r.jsxs("div",{className:"text-center",children:[r.jsx("div",{className:"mx-auto w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-4 shadow-lg",style:{background:H.icon,boxShadow:V==="neon"?`0 0 24px ${H.accent}99`:void 0},children:lockLogo?r.jsx("img",{src:lockLogo,alt:"",className:"w-full h-full object-contain rounded-xl"}):"🔐"}),r.jsx("h1",{className:"text-xl font-bold text-slate-800",children:lockTitle}),r.jsx("p",{className:"text-sm text-slate-500 mt-1 whitespace-pre-line",children:lockText}),r.jsxs("div",{className:"text-xs text-slate-400 mt-2",children:[r.jsx("strong",{children:k.appName}),k.appSubtitle&&r.jsxs(r.Fragment,{children:[" · ",k.appSubtitle]})]})]}),r.jsxs("form",{onSubmit:v,className:"space-y-3",children:[o&&r.jsxs("div",{className:"flex items-center gap-2 p-2.5 bg-slate-50 border border-slate-200 rounded-lg",children:[r.jsx("div",{className:"w-8 h-8 rounded-full text-white flex items-center justify-center text-sm font-bold",style:{background:H.icon},children:o.charAt(0).toUpperCase()}),r.jsx("div",{className:"font-medium text-sm text-slate-700",children:o})]}),r.jsxs("div",{children:[r.jsx("label",{className:"block text-xs font-medium text-slate-600 mb-1.5",children:c==="access"?"Mot de passe d'accès":c==="google"?"Mot de passe Save en ligne":"Mot de passe des données"}),r.jsx(ar,{type:"password",value:b,onChange:W=>n(W.target.value),placeholder:"••••••••",autoFocus:!0,disabled:S,className:"text-base"})]}),A&&r.jsxs("div",{className:"p-2.5 bg-red-50 border border-red-200 text-red-700 text-xs rounded-lg text-center font-medium",children:[A,m>=3&&r.jsxs("div",{className:"mt-1 text-[10px] text-red-600 italic",children:[m," tentatives échouées"]})]}),r.jsxs("div",{className:"flex gap-2",children:[u&&r.jsx(Ur,{type:"button",variant:"outline",onClick:u,className:"flex-1",children:"Annuler"}),r.jsx(Ur,{type:"submit",disabled:S||!b,className:"flex-1",children:S?"⏳ ...":"🔓 Déverrouiller"})]})]}),r.jsxs("div",{className:"text-[10px] text-slate-400 text-center pt-3 border-t border-slate-100",children:["🔒 Vos données restent locales — aucun mot de passe n'est envoyé en ligne.",r.jsx("br",{}),r.jsx("span",{children:`Thème : ${H.name} · Style : ${(lockStylePresets.find(W=>W.id===V)||lockStylePresets[0]).name}`})]})]})})})}function Ex(){vv();const[c,Q]=ja(),u=eg()&&!tg();Wv(),jr.useEffect(()=>{Kv(()=>c)},[]),jr.useEffect(()=>{const S=c.app.uiTheme||"default";document.body.className=document.body.className.split(" ").filter(h=>!h.startsWith("ui-theme-")).concat(`ui-theme-${S}`).join(" ")},[c.app.uiTheme]),jr.useEffect(()=>{const S=Jv();S&&(S.provider?c.app.cloud?.enabled||Q.updateApp({cloud:{...S,enabled:!!S.enabled||!!S.autoEnable,embedInExport:!0}}):S.apiKey&&S.projectId&&(c.app.cloud?.config?.apiKey||Q.updateApp({cloud:{enabled:!!S.autoEnable,provider:"firebase",config:S,embedInExport:!0}})))},[]),jr.useEffect(()=>{s1({appName:c.app.appName||"Application",shortName:c.app.appName?.slice(0,12),themeColor:(c.company?.theme||c.theme).primary,icon:c.app.appIconImage||c.app.appIcon||"A"})},[c.app.appName,c.app.appIcon,c.app.appIconImage,c.theme.primary,c.company?.theme?.primary]);const C=c.app.auth,k=!!C?.requireAccessPassword&&!!C?.accessPasswordHash,M=!!C?.requireDataPassword&&!!C?.dataPasswordHash,googleLockRequired=!!C?.requireGooglePassword&&!!C?.googlePasswordHash,[J,o]=jr.useState(!k||Fm()),[b,n]=jr.useState(!M||Tm()),[googleOk,setGoogleOk]=jr.useState(!googleLockRequired||googleUnlocked());jr.useEffect(()=>{o(k?Fm():!0)},[k,C?.accessPasswordHash]),jr.useEffect(()=>{n(M?Tm():!0)},[M,C?.dataPasswordHash]),jr.useEffect(()=>{setGoogleOk(googleLockRequired?googleUnlocked():!0)},[googleLockRequired,C?.googlePasswordHash]);const[A,B]=jr.useState("dashboard"),[m,w]=jr.useState(!1);return jr.useEffect(()=>{u&&(A==="settings"||A==="export")&&B("dashboard")},[u,A]),jr.useEffect(()=>{const S=C?.autoLockMinutes||0;if(!S||!k)return;let h;const v=()=>{clearTimeout(h),h=setTimeout(()=>{zh(!1),o(!1)},S*60*1e3)},g=["mousemove","keydown","click","touchstart"];return g.forEach(_=>window.addEventListener(_,v)),v(),()=>{clearTimeout(h),g.forEach(_=>window.removeEventListener(_,v))}},[C?.autoLockMinutes,k]),k&&!J?r.jsx(Om,{kind:"access",onUnlock:()=>o(!0)}):r.jsxs("div",{className:`flex h-full anim-${c.app.companySwitchAnimation||"fade"} ui-theme-${c.app.uiTheme||"default"}`,style:{background:"var(--ui-background, #f1f5f9)"},children:[r.jsx("div",{className:"hidden md:flex h-full",children:r.jsx(mm,{page:A,setPage:B})}),m&&r.jsxs("div",{className:"fixed inset-0 z-40 md:hidden flex",children:[r.jsx("div",{className:"bg-slate-900/50 absolute inset-0",onClick:()=>w(!1)}),r.jsx("div",{className:"relative z-50",children:r.jsx(mm,{page:A,setPage:B,onClose:()=>w(!1)})})]}),r.jsxs("main",{className:"flex-1 overflow-y-auto h-full",children:[r.jsxs("div",{className:"md:hidden bg-white border-b border-slate-200 px-4 py-3 flex items-center justify-between no-print sticky top-0 z-30",children:[r.jsx("button",{onClick:()=>w(!0),className:"p-2 hover:bg-slate-100 rounded-lg",children:r.jsx("svg",{className:"w-5 h-5",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",children:r.jsx("path",{d:"M3 6h18M3 12h18M3 18h18"})})}),r.jsx("div",{className:"font-bold text-slate-800",children:"FactureMA"}),r.jsx("div",{className:"w-9"})]}),A==="dashboard"&&r.jsx(A1,{setPage:B}),A==="devis"&&r.jsx(Yu,{type:"devis"}),A==="proforma"&&r.jsx(Yu,{type:"proforma"}),A==="bonCommande"&&r.jsx(Yu,{type:"bonCommande"}),A==="bonLivraison"&&r.jsx(Yu,{type:"bonLivraison"}),A==="facture"&&r.jsx(Yu,{type:"facture"}),A==="avoir"&&r.jsx(Yu,{type:"avoir"}),A==="factureAchat"&&r.jsx(Yu,{type:"factureAchat"}),A==="credits"&&r.jsx(jx,{}),A==="paymentModes"&&r.jsx(PaymentModesPage,{}),A==="clients"&&r.jsx(l1,{}),A==="suppliers"&&r.jsx(Sx,{}),A==="articles"&&r.jsx(u1,{}),A==="data"&&(M&&!b?r.jsx(Om,{kind:"data",onUnlock:()=>n(!0),onCancel:()=>B("dashboard")}):r.jsx(wx,{})),A==="gdriveMain"&&(googleLockRequired&&!googleOk?r.jsx(Om,{kind:"google",onUnlock:()=>setGoogleOk(!0),onCancel:()=>B("dashboard")}):r.jsx(GoogleMenuConfig,{type:"drive"})),A==="gsheetsMain"&&(googleLockRequired&&!googleOk?r.jsx(Om,{kind:"google",onUnlock:()=>setGoogleOk(!0),onCancel:()=>B("dashboard")}):r.jsx(GoogleMenuConfig,{type:"sheets"})),A==="clientSync"&&r.jsx(SyncClientPage,{}),A==="export"&&!u&&r.jsx(Bx,{}),A==="settings"&&!u&&r.jsx(xx,{})]})]},c.activeCompanyId)}b0.createRoot(document.getElementById("root")).render(r.jsx(jr.StrictMode,{children:r.jsx(Ex,{})}));</script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a09f95ccee02bd0e',t:'MTc4MTE3MDEwMQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a078bb389e97e208',t:'MTc4MDc2MjY4OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a09f6ef29a144c05',t:'MTc4MTE2ODUwOQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a0a11afccd3cc889',t:'MTc4MTE4NjA0Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;1954b47c125f43f8b4338b3c4f804e4f&quot;,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
   </body>
 </html>
